@@ -5,7 +5,7 @@ using UnityEngine;
 public class InputManager : MonoBehaviour
 {
     GameGrid gameGrid;
-    [SerializeField] private LayerMask whatIsGridLayer;
+    [SerializeField] private LayerMask whatIsDragLayer;
 
     // Start is called before the first frame update
     void Start()
@@ -16,27 +16,31 @@ public class InputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GridCell cellMouseIsOver = IsMouseOverAGridSpace();
-        print(cellMouseIsOver);
+        Draggable draggableMouseIsOver = IsMouseOverDraggable();
+        Vector2 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        print(worldPosition);
 
-        if(cellMouseIsOver != null) 
+        if(draggableMouseIsOver != null) 
         {
             if (Input.GetMouseButtonDown(0)) 
             {
-                // print(cellMouseIsOver.GetComponentInChildren<Renderer>().material.color);
-                cellMouseIsOver.GetComponentInChildren<Renderer>().material.color = new Color(0, 255, 0);
+                draggableMouseIsOver.GetComponentInChildren<Renderer>().material.color = new Color(0, 255, 0);
+                
+                draggableMouseIsOver.transform.position = new Vector3(worldPosition.x, 0, worldPosition.y);
             }
         }
     }
 
     // Return the grid cell if mouse is over a grid cell and returns null if it is not
-    private GridCell IsMouseOverAGridSpace() 
+    private Draggable IsMouseOverDraggable() 
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         Debug.DrawRay(ray.origin, ray.direction * 10, Color.yellow);
-        if (Physics.Raycast(ray, out RaycastHit hitInfo, Mathf.Infinity, whatIsGridLayer)) 
+
+        if (Physics.Raycast(ray, out RaycastHit hitInfo, Mathf.Infinity, whatIsDragLayer)) 
         {
-            return hitInfo.transform.GetComponent<GridCell>();
+            
+            return hitInfo.transform.GetComponent<Draggable>();
         }
 
         return null;
