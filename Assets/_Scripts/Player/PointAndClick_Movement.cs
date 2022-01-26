@@ -3,13 +3,21 @@ using System.Collections.Generic;
 using UnityEngine.AI;
 using UnityEngine;
 
+[RequireComponent(typeof(NavMeshAgent))]
 public class PointAndClick_Movement : MonoBehaviour
 {
-    public Camera cam;
-    public NavMeshAgent agent;
+    private Camera cam;
+    private NavMeshAgent agent;
 
-    // Update is called once per frame
-    private void Update()
+	private void Start()
+	{
+		agent = GetComponent<NavMeshAgent>();
+
+		//cam always initialized to Main Camera
+		cam = Camera.main;
+	}
+	// Update is called once per frame
+	private void Update()
     {
         if(Input.GetMouseButtonDown(0))
 		{

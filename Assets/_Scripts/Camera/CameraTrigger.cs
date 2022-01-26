@@ -18,14 +18,14 @@ public class CameraTrigger : MonoBehaviour
 		{
 			if(hasEntered)
 			{
-				Debug.Log("Player has already entered. Reentering old room");
+				//Debug.Log("Player has already entered. Reentering old room");
 				hasEntered = true;
 
 				m_cameraManager.CameraSwitch(switchToCam, hasEntered);
 			}
 			else
 			{
-				Debug.Log("Player has changed rooms for the first time");
+				//Debug.Log("Player has changed rooms for the first time");
 				hasEntered = false;
 
 				m_cameraManager.CameraSwitch(switchToCam, hasEntered);

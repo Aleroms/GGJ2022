@@ -45,8 +45,8 @@ public class AudioManager : MonoBehaviour
     private void LevelSpecificPlay(int sceneIndex) 
     {
         // NOTE: Come back to this once the scenes have been finalized
-        switch(sceneIndex) 
-        {
+        //switch(sceneIndex) 
+        //{
             // case 1:
             //     break;
             // case 2:
@@ -57,7 +57,7 @@ public class AudioManager : MonoBehaviour
             //     break;
             // case 5:
             //     break;
-        }
+        //}
     }
 
     public void SetVolume(float volume) 
