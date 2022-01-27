@@ -590,7 +590,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557078432}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.2, y: 0, z: 0}
+  m_LocalPosition: {x: -1.24, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1947584799}
@@ -1412,7 +1412,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 3407c8b9e6ea9624a8e39d1460cd3d99, type: 2}
         m_TargetAssemblyTypeName: DialogueChannel, Assembly-CSharp
-        m_MethodName: RaiseRequestedDialogue
+        m_MethodName: RaiseRequestDialogue
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 6695a489ad6dfbaa9bcdbcbef0bb7640, type: 2}
@@ -1774,7 +1774,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 183.77304, y: 109.6}
+  m_AnchoredPosition: {x: 183.77304, y: 175}
   m_SizeDelta: {x: -367.5461, y: -116.6253}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2025222113
