@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/_Scenes/Menu&Credits/Main Menu.unity
     guid: 4e8b6b2ea4ee89e40a818f06c913a2c3
   - enabled: 1
-    path: Assets/_Scenes/Test/Santi/PlayerMovement.unity
-    guid: 48f6af550cc1d244fa1bb506371ebd86
+    path: Assets/_Scenes/Gameplay/01CrimeScene.unity
+    guid: 0d64f1cdbe45b214886c770016d09da0
+  - enabled: 1
+    path: Assets/_Scenes/Gameplay/02RadioStation.unity
+    guid: 3d5a3bafea289f84985390e23b8b2deb
+  - enabled: 1
+    path: Assets/_Scenes/Gameplay/03CarShop.unity
+    guid: 6fc517a1c5c60fc4381bb5602ce79c6d
+  - enabled: 1
+    path: Assets/_Scenes/Gameplay/04Pier.unity
+    guid: ede7a874b717ac04eb259248c313847d
   m_configObjects: {}

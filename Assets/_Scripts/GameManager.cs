@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-	private int gatingMechanism;
+	[SerializeField] private int gatingMechanism;
+	private bool elecPuzzSolved;
 
 	private void Awake()
 	{
@@ -22,13 +24,40 @@ public class GameManager : MonoBehaviour
 	}
 	private void Start()
 	{
-		gatingMechanism = 0;
+		//gatingMechanism = 0;
+		elecPuzzSolved = false;
+	}
+	public void LoadLevel(int lvl)
+	{
+		try
+		{
+			SceneManager.LoadScene(lvl);
+		}
+		catch
+		{
+			Debug.LogError("lvl index passed NOT VALID");
+		}
+	}
+	public int GetCurrentLevel()
+	{
+		return gatingMechanism;
 	}
 	public void CrimeSceneComplete()
 	{
 		Debug.Log("RCV Crime Scene Complete...");
 		gatingMechanism++;
 		Debug.Log("gating mechanism: " + gatingMechanism);
+	}
+	public void RadioStationComplete()
+	{
+		Debug.Log("RCV Radio Station Complete...");
+		gatingMechanism++;
+		Debug.Log("gating mechanism: " + gatingMechanism);
+	}
+	public void ElectronicsPuzzleComplete()
+	{
+		Debug.Log("Electronic Puzzle Solved");
+		elecPuzzSolved = true;
 	}
 
 

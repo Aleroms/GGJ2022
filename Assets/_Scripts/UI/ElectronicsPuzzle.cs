@@ -20,7 +20,7 @@ public class ElectronicsPuzzle : MonoBehaviour
 		//off state sprite
 		A_indicator.sprite = ABC_State[0];
 		B_indicator.sprite = ABC_State[2];
-		C_indicator.sprite = ABC_State[4];
+		C_indicator.sprite = ABC_State[5];
 
 		A = false; B = false; C = false; AB = false;
 
@@ -29,8 +29,8 @@ public class ElectronicsPuzzle : MonoBehaviour
 			wire.SetActive(false); 
 		}
 
-		//!C
-		Wires[3].SetActive(true);
+		//C
+		Wires[2].SetActive(true);
 	}
 	private void WinCondition()
 	{
@@ -45,8 +45,9 @@ public class ElectronicsPuzzle : MonoBehaviour
 		B_button.GetComponent<Button>().interactable = false;
 		C_button.GetComponent<Button>().interactable = false;
 
-		//turns output light green
+		//turns output light green; notifies GM
 		output.SetActive(false);
+		GameManager.Instance.ElectronicsPuzzleComplete();
 	}
 	public void ButtonPress(int index)
 	{
