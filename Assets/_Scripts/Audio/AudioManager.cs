@@ -7,11 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
-    public Sound[] sounds;
+    public Sound[] sounds; 
     
     public static AudioManager instance;
 
     private float fadeDuration = 0.6f;
+    private int sceneIndex = 0;
 
     private void Awake() 
     {
@@ -38,27 +39,28 @@ public class AudioManager : MonoBehaviour
 
     private void Start() 
     {
-        // int sceneIndex = SceneManager.GetActiveScene().buildIndex;
-        // LevelSpecificPlay(sceneIndex);
+         sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        print(sceneIndex);
+         LevelSpecificPlay(sceneIndex);
+    }
+    private IEnumerator MenuWaitCoroutine()
+    {
+        Play("menu-intro");
+        yield return new WaitForSeconds(40.21f);
+        Play("menu-loop");
     }
 
-    private void LevelSpecificPlay(int sceneIndex) 
+    public void LevelSpecificPlay(int sceneIndex) 
     {
-        // NOTE: Come back to this once the scenes have been finalized
-        //switch(sceneIndex) 
-        //{
-            // case 1:
-            //     break;
-            // case 2:
-            //     break;
-            // case 3:
-            //     break;
-            // case 4:
-            //     break;
-            // case 5:
-            //     break;
-        //}
+        
+        switch(sceneIndex) 
+        {
+            case 0:
+                StartCoroutine(MenuWaitCoroutine());
+                break;
+        }
     }
+    
 
     public void SetVolume(float volume) 
     {
@@ -89,6 +91,11 @@ public class AudioManager : MonoBehaviour
         else
             Debug.LogWarning("audioclip " + name + " is NULL");
     }
+    public void StopMenu()
+	{
+        Stop("menu-loop");
+        Stop("menu-intro");
+	}
 
     public void SettingsButton(float volume) 
     {
