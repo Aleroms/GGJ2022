@@ -19,6 +19,9 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
     {
         dialogueChannel.onDialogueNodeStart += OnDialogueNodeStart;
         dialogueChannel.onDialogueNodeEnd += OnDialogueNodeEnd;
+
+        gameObject.SetActive(false);
+        choicesBoxTransform.gameObject.SetActive(false);
     }
 
     private void OnDestroy() 

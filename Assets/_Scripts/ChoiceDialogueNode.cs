@@ -12,7 +12,7 @@ public class DialogueChoice
     public DialogueNode ChoiceNode => choiceNode;
 }
 
-[CreateAssetMenu(menuName = "Scriptable Object/Narration/Dialogue/Node/Choice")]
+[CreateAssetMenu(menuName = "Scriptable Objects/Narration/Dialogue/Node/Choice")]
 public class ChoiceDialogueNode : DialogueNode
 {
     [SerializeField]

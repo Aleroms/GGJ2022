@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class UIDialogueChoiceController : MonoBehaviour
 {
-    [SerializeField] private Button choice;
+    [SerializeField] private TMP_Text choice;
     [SerializeField] private DialogueChannel dialogueChannel;
 
     private DialogueNode choiceNextNode;
