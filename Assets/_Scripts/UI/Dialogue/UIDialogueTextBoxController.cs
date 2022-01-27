@@ -68,7 +68,7 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
     public void Visit(BasicDialogueNode node)
     {
         listenToInput = true;
-        nextNode = nextNode;
+        nextNode = node.NextNode;
     }
 
     public void Visit(ChoiceDialogueNode node)

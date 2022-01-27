@@ -13,7 +13,7 @@ public class DialogueChannel : ScriptableObject
     public DialogueNodeCallback onDialogueNodeStart;
     public DialogueNodeCallback onDialogueNodeEnd;
 
-    public void RaiseRequestedDialogue(Dialogue dialogue) 
+    public void RaiseRequestDialogue(Dialogue dialogue) 
     {
         onDialogueRequested?.Invoke(dialogue);
     }

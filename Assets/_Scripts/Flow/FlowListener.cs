@@ -16,7 +16,12 @@ public class FlowListener : MonoBehaviour
 
     private void Awake() 
     {
-        // channel.OnFlowStateChanged += onF
+        channel.onFlowStateChanged += OnFlowStateChanged;
+    }
+
+    private void OnDestroy() 
+    {
+        channel.onFlowStateChanged -= OnFlowStateChanged;
     }
 
     private void OnFlowStateChanged(FlowState state) 
