@@ -14,6 +14,7 @@ public class InteractionInstigator : MonoBehaviour
     {
         if (HasNearbyInteractables() && Input.GetButtonDown("Submit")) 
         {
+            print("Do Interaction");
             nearbyInteractables[0].DoInteraction();
         }
     }
