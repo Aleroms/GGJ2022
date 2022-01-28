@@ -12,7 +12,7 @@ public class CameraTrigger : MonoBehaviour
 	{
 		m_cameraManager = GameObject.Find("CameraManager").GetComponent<CameraManager>();
 	}
-	private void OnTriggerExit(Collider other)
+	private void OnTriggerEnter(Collider other)
 	{
 		if(other.CompareTag("Player"))
 		{

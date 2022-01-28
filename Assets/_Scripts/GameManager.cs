@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 	[SerializeField] private int gatingMechanism;
+	[SerializeField] private int level;
 	private bool elecPuzzSolved;
 
 	private void Awake()
@@ -24,8 +25,35 @@ public class GameManager : MonoBehaviour
 	}
 	private void Start()
 	{
-		//gatingMechanism = 0;
+		gatingMechanism = 0;
+		level = 0;
 		elecPuzzSolved = false;
+	}
+	private void Update()
+	{
+		/*For Testing Only*/
+		if(Input.GetKeyDown(KeyCode.P))
+		{
+			level++;
+
+			if (level > 4)
+				level = 0;
+
+			SceneManager.LoadScene(level);
+		}
+
+
+
+	}
+	public void testLevelLoader()
+	{
+			level++;
+
+			if (level > 4)
+				level = 0;
+
+			SceneManager.LoadScene(level);
+		
 	}
 	public void LoadLevel(int lvl)
 	{

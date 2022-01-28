@@ -8,6 +8,7 @@ public class PointAndClick_Movement : MonoBehaviour
 {
     private Camera cam;
     private NavMeshAgent agent;
+	private int playerLayerMask = 3;
 
 	private void Start()
 	{
@@ -21,10 +22,11 @@ public class PointAndClick_Movement : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
 		{
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);		
             RaycastHit hit;
 
-            if(Physics.Raycast(ray, out hit))
+            //if(Physics.Raycast(ray, out hit,playerLayerMask))
+			if(Physics.Raycast(ray,out hit,Mathf.Infinity,playerLayerMask))//100f max dist
 			{
                 agent.SetDestination(hit.point);
 			}
