@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ElectronicsPuzzle : MonoBehaviour
 {
+	private RadioStationManager radioManager;
     
     public Sprite[] ABC_State;  //0-1=A,2-3=B,4-5=C
     public Image A_indicator, B_indicator, C_indicator;
@@ -17,6 +18,8 @@ public class ElectronicsPuzzle : MonoBehaviour
 
 	private void Start()
 	{
+		radioManager = GameObject.Find("RadioStationManager").GetComponent<RadioStationManager>();
+
 		//off state sprite
 		A_indicator.sprite = ABC_State[0];
 		B_indicator.sprite = ABC_State[2];
@@ -47,7 +50,8 @@ public class ElectronicsPuzzle : MonoBehaviour
 
 		//turns output light green; notifies GM
 		output.SetActive(false);
-		GameManager.Instance.ElectronicsPuzzleComplete();
+		radioManager.ElectronicsPuzzleComplete();
+		
 	}
 	public void ButtonPress(int index)
 	{

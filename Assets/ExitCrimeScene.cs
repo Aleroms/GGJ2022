@@ -9,6 +9,7 @@ public class ExitCrimeScene : MonoBehaviour
 		if(other.CompareTag("Player"))
 		{
 			GameObject.Find("CrimeSceneManager").GetComponent<CrimeSceneManager>().ExitCrimeScene();
+
 		}
 	}
 }

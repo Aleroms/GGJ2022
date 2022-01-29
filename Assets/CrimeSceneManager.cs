@@ -57,7 +57,7 @@ public class CrimeSceneManager : MonoBehaviour
 	{
 		GameObject.FindWithTag("Player").GetComponent<PointAndClick_Movement>().enabled = false;
 
-		//map loader doesn't respond to player input. for now just load next lvl
+		
 		mapLoader.SetActive(true);
 		
 	}

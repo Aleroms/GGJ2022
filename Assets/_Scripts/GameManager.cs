@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
 	private void Start()
 	{
 		gatingMechanism = 0;
-		level = 0;
+		level = 0;//SceneManager.GetActiveScene().buildIndex;
 		elecPuzzSolved = false;
 	}
 	private void Update()
@@ -55,6 +55,7 @@ public class GameManager : MonoBehaviour
 			SceneManager.LoadScene(level);
 		
 	}
+	
 	public void LoadLevel(int lvl)
 	{
 		try
@@ -87,6 +88,7 @@ public class GameManager : MonoBehaviour
 	public void ElectronicsPuzzleComplete()
 	{
 		Debug.Log("Electronic Puzzle Solved");
+		gatingMechanism++;
 		elecPuzzSolved = true;
 	}
 
