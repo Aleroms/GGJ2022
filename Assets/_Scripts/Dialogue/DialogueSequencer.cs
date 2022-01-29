@@ -1,3 +1,8 @@
+
+
+using UnityEngine;
+using System.Collections;
+
 public class DialogueException : System.Exception 
 {
     public DialogueException(string message) : base(message) {}
@@ -60,6 +65,7 @@ public class DialogueSequencer
                 onDialogueNodeStart?.Invoke(currentNode);
             } else 
             {
+                // Debug.Log("END");
                 EndDialogue(currentDialogue);
             }
         } else 

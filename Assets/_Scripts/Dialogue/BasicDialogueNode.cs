@@ -7,6 +7,7 @@ public class BasicDialogueNode : DialogueNode
     private DialogueNode nextNode;
     public DialogueNode NextNode => nextNode;
 
+
     public override bool CanBeFollowedByNode(DialogueNode node)
     {
         return nextNode == node;

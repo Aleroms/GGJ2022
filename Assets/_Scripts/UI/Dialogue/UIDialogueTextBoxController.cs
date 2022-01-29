@@ -13,6 +13,8 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
 
     [SerializeField] private DialogueChannel dialogueChannel;
 
+    public GameObject destroyOnEnd;
+
     private bool listenToInput = false;
     private DialogueNode nextNode = null;
 
@@ -61,6 +63,8 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
         {
             Destroy(child.gameObject);
         }
+
+        // if (node.CanBe)
 
         gameObject.SetActive(false);
         choicesBoxTransform.gameObject.SetActive(false);
