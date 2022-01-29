@@ -29,11 +29,24 @@ public class PointAndClick_Movement : MonoBehaviour
 			if(Physics.Raycast(ray,out hit,Mathf.Infinity,playerLayerMask))//100f max dist
 			{
 				Debug.Log(hit.transform.gameObject.name);
-				agent.SetDestination(hit.point);
+
+				if (!hit.collider.CompareTag("Picture"))
+					agent.SetDestination(hit.point);
+				else
+					PicturePuzzle(hit);
 			}
 
 		}
     }
+	private void PicturePuzzle(RaycastHit hit)
+	{
+		Inventory inv = GetComponent<Inventory>();
+		if(inv != null)
+		{
+			inv.CollectPictureFragment();
+			Destroy(hit.transform.gameObject);
+		}
+	}
 
     public void SwitchCamera(Camera c2)
 	{

@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    private int pictureFragment;
+	CrimeSceneManager crimeManager; 
+	private int pictureFragment;
 
 	private void Start()
 	{
+		crimeManager = GameObject.Find("CrimeSceneManager").GetComponent<CrimeSceneManager>();
 		pictureFragment = 0;
 	}
 	public void CollectPictureFragment()
@@ -15,10 +17,11 @@ public class Inventory : MonoBehaviour
 		pictureFragment++;
 
 		Debug.Log("Total pictures collected: " + pictureFragment);
-		
+
 		//update UI
+		crimeManager.UpdatePictureUI(pictureFragment);
 		
-		if(pictureFragment > 2)
+		if(pictureFragment > 4)
 		{
 			//Notify GM that you collected all pictureFrag for lvl CS01
 			Debug.Log("Player has collected all picture fragments... Notifying GameManager");

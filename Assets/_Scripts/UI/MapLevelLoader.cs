@@ -9,9 +9,12 @@ public class MapLevelLoader : MonoBehaviour
     public Sprite[] currentLevel;
     public Button[] buttons;
 
+    
+
     void Start()
     {
         int lvl = GameManager.Instance.GetCurrentLevel();
+       
         
         SelectBackground(lvl);
         InitializeButtons(lvl);
@@ -37,6 +40,7 @@ public class MapLevelLoader : MonoBehaviour
         GameManager.Instance.LoadLevel(lvl);
         Destroy(gameObject);
 	}
+    
 
     // Update is called once per frame
     void Update()

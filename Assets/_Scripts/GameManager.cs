@@ -72,6 +72,8 @@ public class GameManager : MonoBehaviour
 	}
 	public void CrimeSceneComplete()
 	{
+		GameObject.Find("CrimeSceneManager").GetComponent<CrimeSceneManager>().PresentKJAZZClue();
+
 		Debug.Log("RCV Crime Scene Complete...");
 		gatingMechanism++;
 		Debug.Log("gating mechanism: " + gatingMechanism);
