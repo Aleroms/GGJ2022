@@ -91,6 +91,11 @@ public class GameManager : MonoBehaviour
 		gatingMechanism++;
 		elecPuzzSolved = true;
 	}
+	public void CarShopComplete()
+	{
+		Debug.Log("Car Shop Complete...");
+		gatingMechanism++;
+	}
 
 
 }
