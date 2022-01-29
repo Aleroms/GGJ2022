@@ -28,7 +28,8 @@ public class PointAndClick_Movement : MonoBehaviour
             //if(Physics.Raycast(ray, out hit,playerLayerMask))
 			if(Physics.Raycast(ray,out hit,Mathf.Infinity,playerLayerMask))//100f max dist
 			{
-                agent.SetDestination(hit.point);
+				Debug.Log(hit.transform.gameObject.name);
+				agent.SetDestination(hit.point);
 			}
 
 		}
