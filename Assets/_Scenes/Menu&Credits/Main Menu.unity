@@ -499,7 +499,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
+  m_Color: {r: 0.050980393, g: 0.08235294, b: 0.1882353, a: 1}
   m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
@@ -910,7 +910,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dramatic Title
+  m_Text: "D\xE9voiler Noir"
 --- !u!222 &1013542458
 CanvasRenderer:
   m_ObjectHideFlags: 0
