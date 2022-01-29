@@ -4,6 +4,7 @@ using UnityEngine;
 public class InteractionInstigator : MonoBehaviour
 {
     private List<Interactable> nearbyInteractables = new List<Interactable>();
+    public GameObject gameObjectToDestroy;
 
     public bool HasNearbyInteractables() 
     {
@@ -15,8 +16,14 @@ public class InteractionInstigator : MonoBehaviour
         if (HasNearbyInteractables() && Input.GetButtonDown("Submit")) 
         {
             print("Do Interaction");
+            gameObjectToDestroy = nearbyInteractables[0].gameObject;
             nearbyInteractables[0].DoInteraction();
         }
+    }
+
+    public void EmptyInteractables() 
+    {
+        nearbyInteractables.Clear();
     }
 
     private void OnTriggerEnter(Collider other) 
