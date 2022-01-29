@@ -44,6 +44,9 @@ GameObject:
   - component: {fileID: 460701367}
   - component: {fileID: 460701368}
   - component: {fileID: 616531203415305701}
+  - component: {fileID: 740801632}
+  - component: {fileID: 740801634}
+  - component: {fileID: 740801635}
   m_Layer: 3
   m_Name: PlayerJoe
   m_TagString: Player
@@ -139,6 +142,103 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8128187687367862387}
   m_Enabled: 1
+--- !u!114 &740801632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8128187687367862387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e17d3a6b424d3dfb7902c53df59e9202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &740801634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8128187687367862387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 765066fc1e2598746a5a95937b23835d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  channel: {fileID: 11400000, guid: 008fd87543b17b6d1921dd68f7fcbff5, type: 2}
+  entries:
+  - state: {fileID: 11400000, guid: 4ab585721d5385e49bb780972bf3e45a, type: 2}
+    _event:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 460701367}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 740801632}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - state: {fileID: 11400000, guid: a8247273014169b25bc1e3ebb2df677e, type: 2}
+    _event:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 460701367}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 740801632}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &740801635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8128187687367862387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8f180267e335574928da955e581422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueChannel: {fileID: 11400000, guid: 3407c8b9e6ea9624a8e39d1460cd3d99, type: 2}
+  flowChannel: {fileID: 11400000, guid: 008fd87543b17b6d1921dd68f7fcbff5, type: 2}
+  dialogueState: {fileID: 11400000, guid: a8247273014169b25bc1e3ebb2df677e, type: 2}
 --- !u!1001 &8128187686013590392
 PrefabInstance:
   m_ObjectHideFlags: 0
