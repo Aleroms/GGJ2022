@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/_Scenes/Gameplay/01CrimeScene.unity
     guid: 0d64f1cdbe45b214886c770016d09da0
   - enabled: 1
-    path: Assets/_Scenes/Gameplay/02RadioStation.unity
-    guid: 3d5a3bafea289f84985390e23b8b2deb
+    path: Assets/_Scenes/Test/Santi/CinemachineTest/02RadioStation 1.unity
+    guid: 946d2ed86338b7540810f3e4e1ba3d7c
   - enabled: 1
     path: Assets/_Scenes/Test/Santi/CinemachineTest/03CarShop CinemachineTest.unity
     guid: c512702e83cecac4c8d62ae4a1f18321
