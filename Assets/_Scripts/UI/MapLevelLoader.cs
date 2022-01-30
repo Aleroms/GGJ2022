@@ -36,6 +36,22 @@ public class MapLevelLoader : MonoBehaviour
     }
     public void ButtonPress(int lvl)
 	{
+       switch(lvl)
+		{
+            case 2:
+                AudioManager.instance.Stop("bar-postdeath-loop");
+                AudioManager.instance.Play("radio-station-loop");
+                break;
+            case 3:
+                AudioManager.instance.Stop("radio-station-loop");
+                AudioManager.instance.Play("carshop-loop");
+                break;
+            case 4:
+                AudioManager.instance.Stop("carshop-loop");
+                AudioManager.instance.Play("pier-loop");
+                break;
+		}
+
         Debug.Log("Button Pressed");
         GameManager.Instance.LoadLevel(lvl);
         Destroy(gameObject);

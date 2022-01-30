@@ -28,6 +28,7 @@ public class CrimeSceneManager : MonoBehaviour
 	}
 	public void CrimeSceneStart()
 	{
+		AudioManager.instance.Stop("bar-loop");
 		AudioManager.instance.Play("bar-postdeath-loop");
 		deadGuy.SetActive(false);
 		GameObject.FindWithTag("Player").GetComponent<PointAndClick_Movement>().enabled = true;

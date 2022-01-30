@@ -2066,6 +2066,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7036960295585497043, guid: df128abac08bcf04a9ff3f68f62d2eb3, type: 3}
+      propertyPath: sounds.Array.data[16].name
+      value: pier-loop
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df128abac08bcf04a9ff3f68f62d2eb3, type: 3}
 --- !u!1001 &226355917
@@ -21036,6 +21040,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7495280740858464036, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495280740858464036, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 777331006}
@@ -21044,6 +21052,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 777331006}
     - target: {fileID: 7495280741163184282, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495280741163184282, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 777331006}
@@ -21051,6 +21063,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 777331006}
+    - target: {fileID: 7495280741163184282, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495280741163184282, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: pier-loop
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495280741302333630, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7495280741302333630, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
