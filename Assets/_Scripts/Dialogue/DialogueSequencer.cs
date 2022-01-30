@@ -65,8 +65,9 @@ public class DialogueSequencer
                 onDialogueNodeStart?.Invoke(currentNode);
             } else 
             {
-                // Debug.Log("END");
+                Debug.Log("END");
                 EndDialogue(currentDialogue);
+                
             }
         } else 
         {

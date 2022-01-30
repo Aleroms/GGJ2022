@@ -11,6 +11,11 @@ public class InteractionInstigator : MonoBehaviour
         return nearbyInteractables.Count != 0;
     }
 
+    private void Start() 
+    {
+        EmptyInteractables();
+    }
+
     private void Update() 
     {
         if (HasNearbyInteractables() && Input.GetButtonDown("Submit")) 

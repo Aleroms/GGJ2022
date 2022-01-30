@@ -47,13 +47,18 @@ public class DialogueInstigator : MonoBehaviour
         flowChannel.RaiseFlowStateRequest(cachedFlowState);
         cachedFlowState = null;
 
-        Debug.Log("END");
+        // Debug.Log("END");\
         GameObject gameObjectToDestroy = this.gameObject.GetComponent<InteractionInstigator>().gameObjectToDestroy;
-        GameObject i = gameObjectToDestroy.GetComponent<Interactable>().gameObjectToReplaceOldDialogue;
-        this.gameObject.GetComponent<InteractionInstigator>().EmptyInteractables();
-        Destroy(this.gameObject.GetComponent<InteractionInstigator>().gameObjectToDestroy);
-        GameObject e = Instantiate(i, transform.position, transform.rotation);
-        Debug.Log(e);
+
+        if (gameObjectToDestroy) {
+            GameObject i = gameObjectToDestroy.GetComponent<Interactable>().gameObjectToReplaceOldDialogue;
+            this.gameObject.GetComponent<InteractionInstigator>().EmptyInteractables();
+            GameObject e = Instantiate(i, gameObjectToDestroy.transform.position, gameObjectToDestroy.transform.rotation);
+            gameObjectToDestroy.GetComponent<Interactable>().doBeforeItDies.Invoke();
+            Destroy(this.gameObject.GetComponent<InteractionInstigator>().gameObjectToDestroy);
+        }
+
+        // Debug.Log(e);
 
         dialogueChannel.RaiseDialogueEnd(dialogue);
     }
