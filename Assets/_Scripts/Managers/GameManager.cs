@@ -80,10 +80,10 @@ public class GameManager : MonoBehaviour
 	}
 	public void Quit()
 	{
-#if UNITY_STANDALONE
+
 		Debug.Log("Quitting");
 		Application.Quit();
-#endif
+
 	}
 
 
