@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 716c25f911b35f7498b4346764c03775, type: 3}
       propertyPath: m_Name
-      value: WorkBenchNToolBox Variant
+      value: NoInteractionWorkBenchNToolBox
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 716c25f911b35f7498b4346764c03775, type: 3}
@@ -75,3 +75,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.9497577, y: 1.5556028, z: 2.2794585}
   m_Center: {x: -0.12623437, y: -0.44035715, z: 1.1397293}
+--- !u!114 &1147140252740126139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5527778474985574057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8cc8453cf5efaf52a2da319450439f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
