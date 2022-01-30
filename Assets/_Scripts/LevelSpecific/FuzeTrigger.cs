@@ -16,6 +16,7 @@ public class FuzeTrigger : MonoBehaviour
 	{
 		if(other.CompareTag("Player"))
 		{
+			AudioManager.instance.Play("lights");
 			carManager.MainLightsON();
 			activateWorkBench.MakeAvalible();
 		}

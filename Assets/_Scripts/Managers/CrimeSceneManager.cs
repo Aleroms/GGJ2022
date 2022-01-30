@@ -14,6 +14,7 @@ public class CrimeSceneManager : MonoBehaviour
 	public GameObject exitLight;
 	public GameObject mapLoader;
 	public GameObject deadGuy;
+	public Transform target;
 
 	private void Start()
 	{
@@ -30,7 +31,10 @@ public class CrimeSceneManager : MonoBehaviour
 	{
 		AudioManager.instance.Stop("bar-loop");
 		AudioManager.instance.Play("bar-postdeath-loop");
-		deadGuy.SetActive(false);
+
+		deadGuy.transform.position = target.position;
+		//cam1.SetActive(false);
+
 		GameObject.FindWithTag("Player").GetComponent<PointAndClick_Movement>().enabled = true;
 		inventoryUI.SetActive(true);
 		PictureToggle(true);
@@ -49,6 +53,8 @@ public class CrimeSceneManager : MonoBehaviour
 	}
 	public void PresentKJAZZClue()
 	{
+		AudioManager.instance.Play("clue");
+
 		exitLight.SetActive(true);
 		StartCoroutine(KjazzCoroutine());
 	}

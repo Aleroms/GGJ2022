@@ -70,9 +70,12 @@ public class GameManager : MonoBehaviour
 	}
 	public void PeirComplete()
 	{
+		AudioManager.instance.Play("caseClosed");
+
 		Debug.Log("Pier Complete...");
 		gatingMechanism++;
 
+		
 		LoadLevel(gatingMechanism);
 	}
 	public void Quit()

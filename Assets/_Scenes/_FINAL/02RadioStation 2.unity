@@ -4694,10 +4694,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
-    - target: {fileID: 1131236871992111433, guid: 2a74ee9592c0673a581377fa45694b16, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1131236872697112753, guid: 2a74ee9592c0673a581377fa45694b16, type: 3}
       propertyPath: watchedInteractionInstigator
       value: 
@@ -8474,10 +8470,10 @@ RectTransform:
   m_Father: {fileID: 2027121083}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &827449267 stripped
 GameObject:
@@ -10647,6 +10643,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Map_Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 7495280740435895770, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7495280740435895773, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -10677,11 +10677,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7495280740435895773, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 440
+      value: -215.9258
       objectReference: {fileID: 0}
     - target: {fileID: 7495280740435895773, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 305.25
+      value: -162.0309
       objectReference: {fileID: 0}
     - target: {fileID: 7495280740435895773, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11721,7 +11721,7 @@ MonoBehaviour:
   m_SmoothingTime: 0
   m_Damping: 0
   m_DampingWhenOccluded: 0
-  m_OptimalTargetDistance: 0.5
+  m_OptimalTargetDistance: 1
 --- !u!1 &1048308204 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 848f04a3e2e07344784506b21cd02767, type: 3}
@@ -19304,8 +19304,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0015106201}
-  m_SizeDelta: {x: 552, y: 388.75}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1868869631
 MonoBehaviour:
@@ -21799,7 +21799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
