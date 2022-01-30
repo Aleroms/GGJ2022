@@ -27,6 +27,7 @@ public class CrimeSceneManager : MonoBehaviour
 	}
 	public void CrimeSceneStart()
 	{
+		GameObject.FindWithTag("Player").GetComponent<PointAndClick_Movement>().enabled = true;
 		inventoryUI.SetActive(true);
 		PictureToggle(true);
 	}
@@ -52,6 +53,7 @@ public class CrimeSceneManager : MonoBehaviour
 		kjazzUI.SetActive(true);
 		yield return new WaitForSeconds(2f);
 		kjazzUI.SetActive(false);
+		ExitCrimeScene();
 	}
 	public void ExitCrimeScene()
 	{
