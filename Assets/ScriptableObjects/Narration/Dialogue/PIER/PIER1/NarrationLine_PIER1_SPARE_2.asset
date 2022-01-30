@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5f5b627580bb083abaad89d54ceed6c, type: 3}
-  m_Name: PIER1_Node25
+  m_Script: {fileID: 11500000, guid: 1ab0b176cc220b8afb3f30f74eba0239, type: 3}
+  m_Name: NarrationLine_PIER1_SPARE_2
   m_EditorClassIdentifier: 
-  dialogueLine: {fileID: 11400000, guid: 0a6ae91d4ffa0836e8e21a681073e095, type: 2}
-  nextNode: {fileID: 11400000, guid: 8ceec78e50afb87b8ae2ad8dd08952c8, type: 2}
+  speaker: {fileID: 11400000, guid: af2827608ff6f4f91889d6f67068515b, type: 2}
+  text: "Don\u2019t know. Away from this pier at least."

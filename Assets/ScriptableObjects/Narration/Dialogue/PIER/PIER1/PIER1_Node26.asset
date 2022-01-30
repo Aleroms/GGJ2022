@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 824108d967070d6d2bf664103ff37899, type: 3}
+  m_Name: PIER1_Node26
+  m_EditorClassIdentifier: 
+  dialogueLine: {fileID: 11400000, guid: d6aa71d62c4425be68411178a2586bee, type: 2}
+  choices:
+  - choicePreview: SHOOT
+    choiceNode: {fileID: 11400000, guid: 7ea7efb789adf80f888a55055ab8b5b0, type: 2}
+  - choicePreview: SPARE
+    choiceNode: {fileID: 11400000, guid: 32f447f715e93d22c971aec17a49abb4, type: 2}

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5f5b627580bb083abaad89d54ceed6c, type: 3}
-  m_Name: PIER1_Node25
+  m_Name: PIER1_SPARE_Node6
   m_EditorClassIdentifier: 
-  dialogueLine: {fileID: 11400000, guid: 0a6ae91d4ffa0836e8e21a681073e095, type: 2}
-  nextNode: {fileID: 11400000, guid: 8ceec78e50afb87b8ae2ad8dd08952c8, type: 2}
+  dialogueLine: {fileID: 11400000, guid: e3cca5657b5f43b54981808c247dabcf, type: 2}
+  nextNode: {fileID: 11400000, guid: c93ef84e3f0e40a3bb879f56c81f033b, type: 2}
