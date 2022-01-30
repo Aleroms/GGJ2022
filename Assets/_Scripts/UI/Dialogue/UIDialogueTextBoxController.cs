@@ -47,7 +47,8 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
 
         dialogueText.text = node.DialogueLine.Text;
         speakerText.text = node.DialogueLine.Speaker.CharacterName;
-        // speakerImage = node.DialogueLine.Speaker.
+        // Texture2D tempPic = new Texture2D(2,2);
+        speakerImage.sprite = Sprite.Create(node.DialogueLine.Speaker.CharacterPortrait, new Rect(0,0,1024,1024), new Vector2());
 
         node.Accept(this);
     }
@@ -58,6 +59,7 @@ public class UIDialogueTextBoxController : MonoBehaviour, DialogueNodeVisitor
         listenToInput = false;
         dialogueText.text = "";
         speakerText.text = "";
+        speakerImage.sprite = null;
 
         foreach(Transform child in choicesBoxTransform) 
         {

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: NarrationCharacter_Stranger
   m_EditorClassIdentifier: 
   characterName: Stranger
-  characterPortrait: {fileID: 0}
+  characterPortrait: {fileID: 2800000, guid: 1357ac6870b0a5d4db079804f5d127f7, type: 3}

@@ -13,10 +13,4 @@ public class NarrationCharacter : ScriptableObject
     public string CharacterName => characterName;
 
     public Texture2D CharacterPortrait => characterPortrait;
-
-    public void FooBar() 
-    {
-        Sprite sprite = Sprite.Create(characterPortrait, new Rect(0.0f, 0.0f, characterPortrait.width,characterPortrait.height), new Vector2(0.5f, 0.5f), 100.0f);
-        characterPortraitImage.sprite = sprite;
-    }
 }
