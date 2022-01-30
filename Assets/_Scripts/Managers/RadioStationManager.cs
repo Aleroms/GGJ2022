@@ -29,6 +29,8 @@ public class RadioStationManager : MonoBehaviour
 
 	public void StartRadioStation()
 	{
+		GameObject.FindWithTag("Player").GetComponent<PointAndClick_Movement>().enabled = true;
+
 		radioBoothDoor.SetActive(false);
 	}
 	private void Update()
@@ -59,9 +61,15 @@ public class RadioStationManager : MonoBehaviour
 	{
 		return puzzleComplete;
 	}
+
+	public void SlipClue() 
+	{
+		stranger_CLUE.SetActive(true);
+	}
+
 	public void ExitLevel()
 	{
 		nextLevelLight.SetActive(true);
-		stranger_CLUE.SetActive(true);
+		// stranger_CLUE.SetActive(true);
 	}
 }
