@@ -53,7 +53,9 @@ public class DialogueInstigator : MonoBehaviour
         if (gameObjectToDestroy) {
             GameObject i = gameObjectToDestroy.GetComponent<Interactable>().gameObjectToReplaceOldDialogue;
             this.gameObject.GetComponent<InteractionInstigator>().EmptyInteractables();
-            GameObject e = Instantiate(i, gameObjectToDestroy.transform.position, gameObjectToDestroy.transform.rotation);
+            if (i) {
+                GameObject e = Instantiate(i, gameObjectToDestroy.transform.position, gameObjectToDestroy.transform.rotation);
+            }
             gameObjectToDestroy.GetComponent<Interactable>().doBeforeItDies.Invoke();
             Destroy(this.gameObject.GetComponent<InteractionInstigator>().gameObjectToDestroy);
         }

@@ -54,7 +54,8 @@ public class RadioStationManager : MonoBehaviour
 
 		GameManager.Instance.ElectronicsPuzzleComplete();
 
-		
+		GameObject door = GameObject.Find("StrangerRoomMidPuzzle(Clone)");
+		door.GetComponent<StangerDoorMidPuzzle>().SpawnFinalDoor();
 	}
 	
 	public bool isPuzzleComplete()
@@ -64,11 +65,14 @@ public class RadioStationManager : MonoBehaviour
 
 	public void SlipClue() 
 	{
+		print("SLIP");
+		stranger_CLUE = GameObject.Find("NoInteractionStrangerRoom(Clone)").transform.GetChild(0).gameObject;
 		stranger_CLUE.SetActive(true);
 	}
 
 	public void ExitLevel()
 	{
+		GameObject.FindWithTag("Player").GetComponent<PointAndClick_Movement>().enabled = true;
 		nextLevelLight.SetActive(true);
 		// stranger_CLUE.SetActive(true);
 	}

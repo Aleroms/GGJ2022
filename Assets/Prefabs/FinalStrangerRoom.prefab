@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6620006696779249020, guid: 60ab5e0cf34bdf8e587d43699362aabf, type: 3}
+      propertyPath: gameObjectToReplaceOldDialogue
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4582986973960244829, guid: 60ab5e0cf34bdf8e587d43699362aabf, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -72,37 +76,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4582986973960244829, guid: 60ab5e0cf34bdf8e587d43699362aabf, type: 3}
   m_PrefabInstance: {fileID: 823087264667702220}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3818982673339108604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3816303562340325775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c37b3b067b1066a20a088ffe72c1bce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onInteraction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 3407c8b9e6ea9624a8e39d1460cd3d99, type: 2}
-        m_TargetAssemblyTypeName: DialogueChannel, Assembly-CSharp
-        m_MethodName: RaiseRequestDialogue
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: Dialogue, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  doBeforeItDies:
-    m_PersistentCalls:
-      m_Calls: []
-  gameObjectToReplaceOldDialogue: {fileID: 0}
 --- !u!135 &2572185243241823272
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -147,3 +120,46 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   gameObjectToReplaceOldDialogue: {fileID: 0}
+--- !u!114 &3818982673339108604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3816303562340325775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c37b3b067b1066a20a088ffe72c1bce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteraction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 3407c8b9e6ea9624a8e39d1460cd3d99, type: 2}
+        m_TargetAssemblyTypeName: DialogueChannel, Assembly-CSharp
+        m_MethodName: RaiseRequestDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 7a7483d88db45648fad4347561acbfe4, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Dialogue, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  doBeforeItDies:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  gameObjectToReplaceOldDialogue: {fileID: 3749880902256725582, guid: 33180b5b16b7afb6888ec350550dd8da, type: 3}
