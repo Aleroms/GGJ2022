@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Gameplay/04Pier.unity
     guid: ede7a874b717ac04eb259248c313847d
+  - enabled: 1
+    path: Assets/_Scenes/Menu&Credits/Credits.unity
+    guid: 2e8d2d1a7d8dfa44eb5f73a9e7a8e81e
   m_configObjects: {}

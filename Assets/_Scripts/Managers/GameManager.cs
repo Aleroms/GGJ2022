@@ -96,6 +96,20 @@ public class GameManager : MonoBehaviour
 		Debug.Log("Car Shop Complete...");
 		gatingMechanism++;
 	}
+	public void PeirComplete()
+	{
+		Debug.Log("Pier Complete...");
+		gatingMechanism++;
+
+		LoadLevel(gatingMechanism);
+	}
+	public void Quit()
+	{
+#if UNITY_STANDALONE
+		Debug.Log("Quitting");
+		Application.Quit();
+#endif
+	}
 
 
 }

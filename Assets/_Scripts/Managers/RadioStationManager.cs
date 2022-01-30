@@ -9,6 +9,7 @@ public class RadioStationManager : MonoBehaviour
 	public GameObject electronicsPuzzleUI;
 	public GameObject nextLevelLight;
 	public GameObject mapLoader;
+	public GameObject stranger_CLUE;
 	public bool puzzleComplete;
 
 	private void Start()
@@ -53,6 +54,7 @@ public class RadioStationManager : MonoBehaviour
 
 		
 	}
+	
 	public bool isPuzzleComplete()
 	{
 		return puzzleComplete;
@@ -60,5 +62,6 @@ public class RadioStationManager : MonoBehaviour
 	public void ExitLevel()
 	{
 		nextLevelLight.SetActive(true);
+		stranger_CLUE.SetActive(true);
 	}
 }
