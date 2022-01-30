@@ -37,6 +37,8 @@ public class ElectronicsPuzzle : MonoBehaviour
 	}
 	private void WinCondition()
 	{
+		AudioManager.instance.Play("puzzle-complete");
+
 		foreach (GameObject wire in Wires)
 		{
 			wire.SetActive(false);
@@ -55,6 +57,8 @@ public class ElectronicsPuzzle : MonoBehaviour
 	}
 	public void ButtonPress(int index)
 	{
+		AudioManager.instance.Play("button");
+
 		switch(index)
 		{
 			case 1:

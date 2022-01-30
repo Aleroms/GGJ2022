@@ -5864,7 +5864,7 @@ Camera:
     height: 1
   near clip plane: 0.03
   far clip plane: 1000
-  field of view: 60
+  field of view: 80
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -5889,8 +5889,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 678023966}
-  m_LocalRotation: {x: -0.022445431, y: 0.10250859, z: 0.0023136297, w: 0.9944762}
-  m_LocalPosition: {x: -0.16726886, y: 1.816, z: -7.3494015}
+  m_LocalRotation: {x: -0.10126809, y: 0.686731, z: -0.008010334, w: 0.7197786}
+  m_LocalPosition: {x: 12.117, y: 0.519, z: -10.055}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6313,7 +6313,7 @@ MonoBehaviour:
   m_SmoothingTime: 0
   m_Damping: 0
   m_DampingWhenOccluded: 0
-  m_OptimalTargetDistance: 0.69
+  m_OptimalTargetDistance: 0.5
 --- !u!1 &719731882 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 68ed971667132ad4ca771ff8dda58bd3, type: 3}
@@ -11756,12 +11756,12 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 11
+  m_Priority: 12
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 81
+    FieldOfView: 80
     OrthographicSize: 5
     NearClipPlane: 0.03
     FarClipPlane: 1000
@@ -11819,7 +11819,7 @@ MonoBehaviour:
   m_SmoothingTime: 0
   m_Damping: 0
   m_DampingWhenOccluded: 0
-  m_OptimalTargetDistance: 3
+  m_OptimalTargetDistance: 0.8
 --- !u!1001 &1240398056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12103,7 +12103,7 @@ MonoBehaviour:
   m_SmoothingTime: 0
   m_Damping: 0
   m_DampingWhenOccluded: 0
-  m_OptimalTargetDistance: 1
+  m_OptimalTargetDistance: 0.8
 --- !u!1001 &1269372594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12560,7 +12560,7 @@ MonoBehaviour:
   m_SmoothingTime: 0
   m_Damping: 0
   m_DampingWhenOccluded: 0
-  m_OptimalTargetDistance: 1.3
+  m_OptimalTargetDistance: 1
 --- !u!1 &1313604559 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 68ed971667132ad4ca771ff8dda58bd3, type: 3}
@@ -14084,7 +14084,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 60
+    FieldOfView: 80
     OrthographicSize: 5
     NearClipPlane: 0.03
     FarClipPlane: 1000
