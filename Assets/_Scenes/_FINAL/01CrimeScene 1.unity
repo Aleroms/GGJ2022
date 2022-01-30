@@ -17707,7 +17707,7 @@ PrefabInstance:
     - target: {fileID: 4635470018623382691, guid: 83cdff4b3441832408165f27c5dc6aef, type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: 905957e48ac9b774c8347c2d63e7299f, type: 2}
+      objectReference: {fileID: 23800000, guid: 6f45166f189dbcd4d947ca9d96b6ce8c, type: 2}
     - target: {fileID: 4635470018623382691, guid: 83cdff4b3441832408165f27c5dc6aef, type: 3}
       propertyPath: m_LayerMask.m_Bits
       value: 215
@@ -21442,6 +21442,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.085022
       objectReference: {fileID: 0}
+    - target: {fileID: 5226358362831678488, guid: 7797f85f2f14fe6a5aa1949376a46fe2, type: 3}
+      propertyPath: m_Center.x
+      value: -0.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 5226358362831678488, guid: 7797f85f2f14fe6a5aa1949376a46fe2, type: 3}
+      propertyPath: m_Center.z
+      value: -1.14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7797f85f2f14fe6a5aa1949376a46fe2, type: 3}
 --- !u!1 &3295355536072792022 stripped
@@ -21492,3 +21500,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   gameObjectToReplaceOldDialogue: {fileID: 2412273222921730780, guid: 7797f85f2f14fe6a5aa1949376a46fe2, type: 3}
+--- !u!114 &3295355536072792024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3295355536072792022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff

@@ -9,17 +9,17 @@ EditorBuildSettings:
     path: Assets/_Scenes/Menu&Credits/MainMenu2.unity
     guid: e1c53c4755c6b644db88a6470b232f5a
   - enabled: 1
-    path: Assets/_Scenes/Gameplay/01CrimeScene.unity
-    guid: 0d64f1cdbe45b214886c770016d09da0
+    path: Assets/_Scenes/_FINAL/01CrimeScene 1.unity
+    guid: a46ec29455ecb5749855079b097fbdaa
   - enabled: 1
-    path: Assets/_Scenes/Test/Santi/CinemachineTest/02RadioStation 1.unity
-    guid: 946d2ed86338b7540810f3e4e1ba3d7c
+    path: Assets/_Scenes/_FINAL/02RadioStation 2.unity
+    guid: 833a336e54696f34f9fdb92199547e09
   - enabled: 1
-    path: Assets/_Scenes/Test/Santi/CinemachineTest/03CarShop CinemachineTest.unity
-    guid: c512702e83cecac4c8d62ae4a1f18321
+    path: Assets/_Scenes/_FINAL/03CarShop 1.unity
+    guid: 2437514085c0dbd409f65347f1efdf38
   - enabled: 1
-    path: Assets/_Scenes/Gameplay/04Pier.unity
-    guid: ede7a874b717ac04eb259248c313847d
+    path: Assets/_Scenes/_FINAL/04Pier 1.unity
+    guid: 9c74b847cfc976b4fb7a1c19c6290965
   - enabled: 1
     path: Assets/_Scenes/Menu&Credits/Credits.unity
     guid: 2e8d2d1a7d8dfa44eb5f73a9e7a8e81e
