@@ -75,7 +75,8 @@ public class IntroPainting : MonoBehaviour
 		currentPainting.sprite = panels[4];
 		currText.text = narration[20];
 		yield return new WaitForSeconds(waitTillStartGame);
-
+		AudioManager.instance.Stop("menu-loop");
+		AudioManager.instance.Play("bar-loop");
 		GameManager.Instance.LoadLevel(1);
 
 	}

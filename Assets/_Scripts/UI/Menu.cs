@@ -16,12 +16,9 @@ public class Menu : MonoBehaviour
 	private IEnumerator WaitForEndOfMovie()
 	{
 		yield return new WaitForSeconds(creditsMovieLen);
+		AudioManager.instance.Play("menu-loop");
 		introPaintings.SetActive(true);
 	}
 
-	public void LoadNextLevel()
-	{
-		AudioManager.instance.StopMenu();
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-	}
+	
 }

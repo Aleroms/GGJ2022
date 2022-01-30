@@ -13,6 +13,7 @@ public class CrimeSceneManager : MonoBehaviour
 	public GameObject kjazzUI;
 	public GameObject exitLight;
 	public GameObject mapLoader;
+	public GameObject deadGuy;
 
 	private void Start()
 	{
@@ -27,6 +28,8 @@ public class CrimeSceneManager : MonoBehaviour
 	}
 	public void CrimeSceneStart()
 	{
+		AudioManager.instance.Play("bar-postdeath-loop");
+		deadGuy.SetActive(false);
 		GameObject.FindWithTag("Player").GetComponent<PointAndClick_Movement>().enabled = true;
 		inventoryUI.SetActive(true);
 		PictureToggle(true);

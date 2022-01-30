@@ -45,49 +45,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: menu-intro
-    clip: {fileID: 8300000, guid: fe9f10c9d912a9f4d906238d1c54bdce, type: 3}
+    clip: {fileID: 8300000, guid: 9872e0b3a0c1f294fb86413730ee079e, type: 3}
     source: {fileID: 0}
-    volume: 1
+    volume: 0.3
     pitch: 1
     loop: 0
   - name: menu-loop
-    clip: {fileID: 8300000, guid: 910f054b38359f24e9c58e89ea90e52e, type: 3}
+    clip: {fileID: 8300000, guid: 154b07c117036f04db58aa64c33da5b6, type: 3}
     source: {fileID: 0}
-    volume: 1
+    volume: 0.3
     pitch: 1
     loop: 1
   - name: bar-loop
-    clip: {fileID: 8300000, guid: 255192291ade61b479a99c33ea604db7, type: 3}
+    clip: {fileID: 8300000, guid: a750f03eadbc38f46bc56addb7f35b2a, type: 3}
     source: {fileID: 0}
-    volume: 1
+    volume: 0.2
     pitch: 1
     loop: 1
   - name: bar-postdeath-loop
-    clip: {fileID: 8300000, guid: 014d1f2be42893c4c84838d012329572, type: 3}
+    clip: {fileID: 8300000, guid: befcb071d2dd48248842170077b92c4c, type: 3}
     source: {fileID: 0}
     volume: 1
     pitch: 1
     loop: 1
   - name: radio-station-loop
-    clip: {fileID: 8300000, guid: 5c9a99771e0dcde42a066cd3eee7676c, type: 3}
+    clip: {fileID: 8300000, guid: 141e34fbe858eb847a9c50e86f6daa86, type: 3}
     source: {fileID: 0}
     volume: 1
     pitch: 1
     loop: 1
   - name: credits
-    clip: {fileID: 8300000, guid: dcab5db4180775f4f8f2381ac6dcec64, type: 3}
+    clip: {fileID: 8300000, guid: 485ae768f9e82d347bc584355a4231fd, type: 3}
     source: {fileID: 0}
     volume: 1
     pitch: 1
     loop: 1
   - name: clue
-    clip: {fileID: 8300000, guid: d7a2e1aca283093439ac53af815b5175, type: 3}
+    clip: {fileID: 8300000, guid: b3b9dc65e857b5d4d9a822c72597f744, type: 3}
     source: {fileID: 0}
     volume: 1
     pitch: 1
     loop: 0
   - name: fuzebox-loop
-    clip: {fileID: 8300000, guid: 0e10402e1012ef64ba46d93c9a8ed22c, type: 3}
+    clip: {fileID: 8300000, guid: 2afa75090f74fd84bb58c2da514cee30, type: 3}
     source: {fileID: 0}
     volume: 1
     pitch: 1
@@ -99,20 +99,110 @@ MonoBehaviour:
     pitch: 1
     loop: 1
   - name: light
-    clip: {fileID: 8300000, guid: c974eaef9bcefaf4e85a699cb9f05a44, type: 3}
+    clip: {fileID: 8300000, guid: 1458b14e4dc30934c848c1e766bba627, type: 3}
     source: {fileID: 0}
     volume: 1
     pitch: 1
     loop: 1
   - name: map-close
-    clip: {fileID: 8300000, guid: cd40f6c55ab4aca469ee126836311139, type: 3}
+    clip: {fileID: 8300000, guid: 14474928f8284c14d92ce372d8096949, type: 3}
     source: {fileID: 0}
     volume: 1
     pitch: 1
     loop: 0
   - name: map-open
-    clip: {fileID: 8300000, guid: 9e16688d55f477341aa646e3eee9e786, type: 3}
+    clip: {fileID: 8300000, guid: c83b00edf698426489c3987fe2207f4f, type: 3}
     source: {fileID: 0}
     volume: 1
     pitch: 1
     loop: 0
+  - name: carshop-intro
+    clip: {fileID: 8300000, guid: edf7d0acf441e3646b37966bcab286dc, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: carshop-loop
+    clip: {fileID: 8300000, guid: c857580b2fd032f4d9a3ae2a9a99541e, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+  - name: case-closed
+    clip: {fileID: 8300000, guid: 485ae768f9e82d347bc584355a4231fd, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+  - name: jukebox
+    clip: {fileID: 8300000, guid: 7611bc1ec556bb443a9c5f51620a26fc, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: pier_loop
+    clip: {fileID: 8300000, guid: 49639cbf5a49a4247848f4434031572d, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: button
+    clip: {fileID: 8300000, guid: 860ea8bbec18391438b2d1eaa6fb6aba, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: clue
+    clip: {fileID: 8300000, guid: b3b9dc65e857b5d4d9a822c72597f744, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: dialogue
+    clip: {fileID: 8300000, guid: 7d6edac932d512d4db5b2be6f8bd7392, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: footstep-loop
+    clip: {fileID: 8300000, guid: 192528e35ac67834386e1eff70b0a113, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+  - name: footstep-loop
+    clip: {fileID: 8300000, guid: 192528e35ac67834386e1eff70b0a113, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+  - name: fuze-spark
+    clip: {fileID: 8300000, guid: ced3f650a9864d04c93f5a2c4f97f566, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+  - name: light
+    clip: {fileID: 8300000, guid: 1458b14e4dc30934c848c1e766bba627, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+  - name: next-continue
+    clip: {fileID: 8300000, guid: c1192c5f2e3927a4ba6284366dd2e6c3, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+  - name: pick-up
+    clip: {fileID: 8300000, guid: 844b19e90717f3741a55ecbac3d4a0a5, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+  - name: puzzle-complete
+    clip: {fileID: 8300000, guid: 50df2bbedfd43374ba14d9eadefc2245, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
