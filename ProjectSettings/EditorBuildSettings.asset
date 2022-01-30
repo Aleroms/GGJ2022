@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Scenes/Menu&Credits/Main Menu.unity
-    guid: 4e8b6b2ea4ee89e40a818f06c913a2c3
+    path: Assets/_Scenes/Menu&Credits/MainMenu2.unity
+    guid: e1c53c4755c6b644db88a6470b232f5a
   - enabled: 1
     path: Assets/_Scenes/Gameplay/01CrimeScene.unity
     guid: 0d64f1cdbe45b214886c770016d09da0

@@ -40,7 +40,6 @@ public class AudioManager : MonoBehaviour
     private void Start() 
     {
          sceneIndex = SceneManager.GetActiveScene().buildIndex;
-        print(sceneIndex);
          LevelSpecificPlay(sceneIndex);
     }
     private IEnumerator MenuWaitCoroutine()
