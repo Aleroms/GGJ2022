@@ -13,11 +13,63 @@ public class IntroPainting : MonoBehaviour
 	public float textTimer;
 	public float waitTillStartGame;
 
+	public int textIndex;
+	public int panelIndex;
 	private void Start()
 	{
-		
-		StartCoroutine(PaintingCoroutine());
+		textIndex = 0;
+		panelIndex = 0;
+
+		currentPainting.sprite = panels[0];
+		currText.text = narration[0];
+		//StartCoroutine(PaintingCoroutine());
 	}
+	private void Update()
+	{
+		if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+		{
+			textIndex++;
+
+			if (textIndex == 21)
+			{
+				AudioManager.instance.Stop("menu-loop");
+				AudioManager.instance.Play("bar-loop");
+				GameManager.Instance.LoadLevel(1);
+				return;
+			}
+
+			currText.text = narration[textIndex];
+
+			if (textIndex == 5)
+			{
+				panelIndex++;
+				currentPainting.sprite = panels[panelIndex];
+			}
+			else if (textIndex == 7)
+			{
+				panelIndex++;
+				currentPainting.sprite = panels[panelIndex];
+			}
+			else if (textIndex == 12)
+			{
+				panelIndex++;
+				currentPainting.sprite = panels[panelIndex];
+			}
+			else if (textIndex == 20)
+			{
+				panelIndex++;
+				currentPainting.sprite = panels[panelIndex];
+			}
+			
+		}
+	}
+	/*else if(textIndex > 20)
+			{
+				AudioManager.instance.Stop("menu-loop");
+				AudioManager.instance.Play("bar-loop");
+				GameManager.Instance.LoadLevel(1);
+			}*/
+
 	private IEnumerator PaintingCoroutine()
 	{
 		/*		Painting 1		*/
@@ -71,7 +123,7 @@ public class IntroPainting : MonoBehaviour
 		currText.text = narration[19];
 		yield return new WaitForSeconds(textTimer);
 
-		/*		Painting 4		*/
+		/*		Painting 5		*/
 		currentPainting.sprite = panels[4];
 		currText.text = narration[20];
 		yield return new WaitForSeconds(waitTillStartGame);

@@ -455,7 +455,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1075643964
 RectTransform:
   m_ObjectHideFlags: 0
@@ -567,6 +567,8 @@ MonoBehaviour:
     I soon found out\u2026 life had a knack for ruining nights"
   textTimer: 3
   waitTillStartGame: 5
+  textIndex: 0
+  panelIndex: 0
 --- !u!1 &1091117011
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,7 +838,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1538655282
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1135,7 +1137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!328 &2101849815
 VideoPlayer:
   m_ObjectHideFlags: 0
