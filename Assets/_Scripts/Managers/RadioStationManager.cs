@@ -11,6 +11,7 @@ public class RadioStationManager : MonoBehaviour
 	public GameObject mapLoader;
 	public GameObject stranger_CLUE;
 	public bool puzzleComplete;
+	
 
 	private void Start()
 	{
@@ -42,21 +43,27 @@ public class RadioStationManager : MonoBehaviour
 	}
 	public void StartElectronicsPuzzle()
 	{
-		GameObject.FindWithTag("Player").GetComponent<PointAndClick_Movement>().enabled = false;
-		electronicsPuzzleUI.SetActive(true);
+		if(!puzzleComplete)
+		{
+			GameObject.FindWithTag("Player").GetComponent<PointAndClick_Movement>().enabled = false;
+			electronicsPuzzleUI.SetActive(true);
+		}
+
+		
 	}
 	public void ElectronicsPuzzleComplete()
 	{
 		puzzleComplete = true;
 
 		GameObject.FindWithTag("Player").GetComponent<PointAndClick_Movement>().enabled = true;
-		electronicsPuzzleUI.SetActive(false);
+		//electronicsPuzzleUI.SetActive(false);
 
 		GameManager.Instance.ElectronicsPuzzleComplete();
 
 		GameObject door = GameObject.Find("StrangerRoomMidPuzzle(Clone)");
 		door.GetComponent<StangerDoorMidPuzzle>().SpawnFinalDoor();
 	}
+	
 	
 	public bool isPuzzleComplete()
 	{
