@@ -7,6 +7,7 @@ public class ElectronicsPuzzle : MonoBehaviour
 {
 	private RadioStationManager radioManager;
 	private Animator elecAnimator;
+	public Animator backgroundAnimator;
     
     public Sprite[] ABC_State;  //0-1=A,2-3=B,4-5=C
     public Image A_indicator, B_indicator, C_indicator;
@@ -57,6 +58,7 @@ public class ElectronicsPuzzle : MonoBehaviour
 		radioManager.ElectronicsPuzzleComplete();
 
 		elecAnimator.SetTrigger("ElectronicPuzzleDone");
+		backgroundAnimator.SetTrigger("Electronic");
 		
 	}
 	public void ButtonPress(int index)

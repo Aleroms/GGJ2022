@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 740801632}
   - component: {fileID: 740801634}
   - component: {fileID: 740801635}
+  - component: {fileID: 536105537}
   m_Layer: 3
   m_Name: PlayerJoe
   m_TagString: Player
@@ -123,7 +124,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
-  m_Acceleration: 8
+  m_Acceleration: 12
   avoidancePriority: 50
   m_AngularSpeed: 960
   m_StoppingDistance: 0.3
@@ -154,6 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e17d3a6b424d3dfb7902c53df59e9202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameObjectToDestroy: {fileID: 0}
 --- !u!114 &740801634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,6 +241,25 @@ MonoBehaviour:
   dialogueChannel: {fileID: 11400000, guid: 3407c8b9e6ea9624a8e39d1460cd3d99, type: 2}
   flowChannel: {fileID: 11400000, guid: 008fd87543b17b6d1921dd68f7fcbff5, type: 2}
   dialogueState: {fileID: 11400000, guid: a8247273014169b25bc1e3ebb2df677e, type: 2}
+--- !u!95 &536105537
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8128187687367862387}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 0778225fcdc4c9c4f9f4fab2a06ca3c3, type: 3}
+  m_Controller: {fileID: 9100000, guid: e2df37b4e156c0846aaf0dad4299135e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &8128187686013590392
 PrefabInstance:
   m_ObjectHideFlags: 0
