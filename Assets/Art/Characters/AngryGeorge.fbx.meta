@@ -18,7 +18,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftUpperLeg' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -26,7 +27,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -80,7 +81,177 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: AngryGeorge(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Box002
+      parentName: AngryGeorge(Clone)
+      position: {x: -1.4901161e-10, y: 0.0000000047683715, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: IK Chain001
+      parentName: AngryGeorge(Clone)
+      position: {x: 0.31375498, y: 0.12184011, z: -0.26377457}
+      rotation: {x: -0.7071001, y: -0.0030852421, z: -0.0030852421, w: 0.7071001}
+      scale: {x: 1, y: 1, z: 1}
+    - name: IK Chain002
+      parentName: AngryGeorge(Clone)
+      position: {x: -0.33701217, y: 0.061761778, z: 0.17239892}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone008
+      parentName: AngryGeorge(Clone)
+      position: {x: 0.09315123, y: 0.5980905, z: -0.012349968}
+      rotation: {x: 0.43731323, y: 0.55565995, z: 0.43731254, w: 0.555659}
+      scale: {x: 1.0000006, y: 0.99999905, z: 1.0000002}
+    - name: Bone009
+      parentName: Bone008
+      position: {x: -0.35431427, y: 0.0000005149841, z: 0}
+      rotation: {x: -0.00000025331974, y: -0.00000008940697, z: 0.22126025, w: 0.97521484}
+      scale: {x: 0.9999987, y: 1.0000011, z: 1}
+    - name: Bone010
+      parentName: Bone009
+      position: {x: -0.34699842, y: -0.000000009536743, z: -0.000000019073486}
+      rotation: {x: -0.00000010239461, y: -0.00000013353613, z: -0.104292065, w: 0.9945468}
+      scale: {x: 1, y: 1.0000011, z: 1.0000002}
+    - name: Bone011
+      parentName: Bone010
+      position: {x: -0.10418602, y: 0.000000009536743, z: 0.000000019073486}
+      rotation: {x: -0.00000011920929, y: -0, z: -0.6529721, w: 0.757382}
+      scale: {x: 0.9999991, y: 0.9999999, z: 0.9999997}
+    - name: Bone012
+      parentName: Bone011
+      position: {x: -0.1790871, y: -0.000000020149164, z: 1.6553556e-12}
+      rotation: {x: -0.000000038178303, y: -0.000000082811304, z: -0.04638433, w: 0.99892366}
+      scale: {x: 0.9999998, y: 1.0000005, z: 1.0000001}
+    - name: Bone007
+      parentName: AngryGeorge(Clone)
+      position: {x: -0.0000000026066098, y: 0.7462914, z: -0.11102613}
+      rotation: {x: 0.4755138, y: 0.52334166, z: 0.47551394, w: 0.52334183}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Bone008(mirrored)
+      parentName: AngryGeorge(Clone)
+      position: {x: -0.09315125, y: 0.5980906, z: -0.012349968}
+      rotation: {x: 0.55565983, y: 0.43731323, z: -0.5556593, w: -0.43731236}
+      scale: {x: 1.0000005, y: 1.0000001, z: 1.0000006}
+    - name: Bone009(mirrored)
+      parentName: Bone008(mirrored)
+      position: {x: -0.35431403, y: -0.0000004959106, z: 0.000000076293944}
+      rotation: {x: -0.0000005662441, y: 0.00000010430813, z: 0.22126037, w: -0.9752148}
+      scale: {x: 0.9999998, y: 1.0000002, z: 1.0000001}
+    - name: Bone010(mirrored)
+      parentName: Bone009(mirrored)
+      position: {x: -0.34699842, y: -0.000000095367426, z: 0.000000038146972}
+      rotation: {x: 0.00000023841858, y: -0.00000044703484, z: -0.10429193, w: -0.9945468}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Bone011(mirrored)
+      parentName: Bone010(mirrored)
+      position: {x: -0.10418596, y: -0.000000114440915, z: -0.000000057220458}
+      rotation: {x: -0.00000034101924, y: 0.00000027214776, z: -0.6529722, w: -0.7573819}
+      scale: {x: 1.0000004, y: 1.0000001, z: 0.99999994}
+    - name: Bone012(mirrored)
+      parentName: Bone011(mirrored)
+      position: {x: -0.17908703, y: 0.000000047683713, z: 0.000000014305114}
+      rotation: {x: -0.00000014750599, y: -0.00000004518815, z: 0.046384443, w: 0.99892366}
+      scale: {x: 1.0000002, y: 1.0000012, z: 1.0000006}
+    - name: Bone001
+      parentName: AngryGeorge(Clone)
+      position: {x: -0.0000000026066098, y: 0.7462914, z: -0.059632238}
+      rotation: {x: -0.41021115, y: 0.575957, z: -0.4102115, w: 0.57595736}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone002
+      parentName: Bone001
+      position: {x: -0.11873237, y: 0.000000038146972, z: 0.000000013881112}
+      rotation: {x: -0.00000022351742, y: -0, z: -0.12149005, w: 0.9925927}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone003
+      parentName: Bone002
+      position: {x: -0.15800643, y: 0, z: 0.0000000033819196}
+      rotation: {x: -0.000000008417246, y: 0.00000006747331, z: -0.03754285, w: 0.9992951}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: Bone020
+      parentName: Bone003
+      position: {x: -0.13176069, y: -0.0048142173, z: 0.16505973}
+      rotation: {x: -0.49529243, y: -0.5046635, z: 0.51171625, w: -0.48800272}
+      scale: {x: 0.99999976, y: 1.0000002, z: 0.99999976}
+    - name: Bone021
+      parentName: Bone020
+      position: {x: -0.34820992, y: 0, z: -0.000000013451681}
+      rotation: {x: -0.00000023841855, y: 0.00000017881392, z: -0.02456839, w: 0.99969816}
+      scale: {x: 0.99999976, y: 0.9999996, z: 0.99999994}
+    - name: Bone022
+      parentName: Bone021
+      position: {x: -0.2287217, y: 0, z: 1.8620994e-10}
+      rotation: {x: -0.00000021996527, y: -0.00000014284286, z: 0.07859899, w: 0.99690634}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000001}
+    - name: Bone026
+      parentName: Bone022
+      position: {x: 0.000000038146972, y: 0, z: -1.8950232e-10}
+      rotation: {x: 0.23797895, y: 0.46668786, z: -0.28973413, w: 0.8010135}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000001}
+    - name: Bone027
+      parentName: Bone026
+      position: {x: -0.089124545, y: -0.0000008010864, z: 0}
+      rotation: {x: 0.055535875, y: -0.26099965, z: 0.05290032, w: 0.9622872}
+      scale: {x: 1.0000005, y: 1, z: 0.9999999}
+    - name: Bone023
+      parentName: Bone022
+      position: {x: -0.0949374, y: -0.000000076293944, z: 0.000000011977572}
+      rotation: {x: -0.00000012413965, y: -0.00000015035177, z: -0.08202642, w: 0.9966302}
+      scale: {x: 1.0000005, y: 0.9999996, z: 0.9999999}
+    - name: Bone024
+      parentName: Bone023
+      position: {x: -0.063547745, y: 0.000000076293944, z: 0.000000008480492}
+      rotation: {x: 0.000000018516772, y: 0.0000000122936115, z: -0.1742363, w: 0.98470396}
+      scale: {x: 0.99999994, y: 1.0000005, z: 1}
+    - name: Bone020(mirrored)
+      parentName: Bone003
+      position: {x: -0.13176066, y: -0.004814197, z: -0.16505966}
+      rotation: {x: 0.48800248, y: -0.5117161, z: 0.50466406, w: 0.49529234}
+      scale: {x: 1, y: 1.0000005, z: 1}
+    - name: Bone021(mirrored)
+      parentName: Bone020(mirrored)
+      position: {x: -0.34820992, y: -0.000000064762695, z: -0.000000076293944}
+      rotation: {x: 0.000000014901158, y: 0.00000010430811, z: 0.024568418, w: 0.9996982}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999976}
+    - name: Bone022(mirrored)
+      parentName: Bone021(mirrored)
+      position: {x: -0.2287215, y: 0.000000014167635, z: 0.000000076293944}
+      rotation: {x: 0.0000004541531, y: -0.00000010826358, z: -0.17053781, w: 0.9853512}
+      scale: {x: 1.0000008, y: 0.99999994, z: 1}
+    - name: Bone026(mirrored)
+      parentName: Bone022(mirrored)
+      position: {x: -0.000000114440915, y: -0.00000006193679, z: 0}
+      rotation: {x: -0.23797934, y: 0.46668825, z: 0.2897344, w: 0.8010131}
+      scale: {x: 1.0000002, y: 0.9999997, z: 0.9999997}
+    - name: Bone027(mirrored)
+      parentName: Bone026(mirrored)
+      position: {x: -0.08912441, y: 0.00000087261196, z: -0.000000076293944}
+      rotation: {x: -0.055535823, y: -0.26099992, z: -0.052900426, w: 0.9622871}
+      scale: {x: 0.9999998, y: 0.99999994, z: 1.0000008}
+    - name: Bone023(mirrored)
+      parentName: Bone022(mirrored)
+      position: {x: -0.09493751, y: 0.000000017353631, z: -0.000000076293944}
+      rotation: {x: 0.0000000022641586, y: -0.000000011297281, z: 0.10310338, w: 0.99467075}
+      scale: {x: 0.99999946, y: 1.0000007, z: 1.0000001}
+    - name: Bone024(mirrored)
+      parentName: Bone023(mirrored)
+      position: {x: -0.06354766, y: -0.000000056575445, z: 0.000000076293944}
+      rotation: {x: 0.000000050002686, y: 0.000000057932073, z: 0.17423655, w: 0.98470384}
+      scale: {x: 1.0000005, y: 0.9999996, z: 1}
+    - name: Bone004
+      parentName: Bone003
+      position: {x: -0.20469177, y: -0.000000071381216, z: 0.000000006850374}
+      rotation: {x: -0.000000039203737, y: 0.000000050704394, z: 0.014833752, w: -0.99989}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1}
+    - name: Bone005
+      parentName: Bone004
+      position: {x: -0.09950243, y: -0.00000005664304, z: 0.0000000032471077}
+      rotation: {x: -0.000000032174476, y: 0.000000021940151, z: -0.14032951, w: -0.9901049}
+      scale: {x: 0.9999998, y: 0.9999997, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -91,13 +262,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 

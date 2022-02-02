@@ -25,6 +25,8 @@ public class CarShopManager : MonoBehaviour
 	}
 	public void ExitCarShop()
 	{
+		
+
 		GameObject.FindWithTag("Player").GetComponent<PointAndClick_Movement>().enabled = false;
 		GameManager.Instance.CarShopComplete();
 

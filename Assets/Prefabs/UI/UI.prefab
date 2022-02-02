@@ -30,7 +30,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1131236872165921293}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -250,8 +250,8 @@ RectTransform:
   - {fileID: 1131236872250840997}
   - {fileID: 1131236872855029968}
   - {fileID: 1131236873562808142}
-  - {fileID: 1131236872497604342}
   - {fileID: 4955571301390323762}
+  - {fileID: 1131236872497604342}
   m_Father: {fileID: 1131236871992111427}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -351,8 +351,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 35, y: -23.899998}
-  m_SizeDelta: {x: 455.8669, y: 63.3528}
+  m_AnchoredPosition: {x: 77, y: -14}
+  m_SizeDelta: {x: 537.347, y: 84.755}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1131236872250840923
 CanvasRenderer:
@@ -445,7 +445,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -72.40765, w: -25.259628}
+  m_margin: {x: 0, y: 0, z: 1.3649443, w: 1.1663818}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -476,16 +476,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131236872497604337}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1131236872165921293}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -292.57, y: -19.377}
+  m_AnchoredPosition: {x: -292.57, y: -19.376999}
   m_SizeDelta: {x: 84.7553, y: 84.755}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1131236872497604340

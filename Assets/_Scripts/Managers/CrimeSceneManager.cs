@@ -42,7 +42,7 @@ public class CrimeSceneManager : MonoBehaviour
 	public void UpdatePictureUI(int num)
 	{
 
-		pictureCountTxt.text = num.ToString();
+		pictureCountTxt.text = num + "/5";
 	}
 	private void PictureToggle(bool state)
 	{

@@ -14,6 +14,8 @@ public class CompleteGame : MonoBehaviour
 
     public void CompletePier() 
     {
+        AudioManager.instance.Stop("pier-loop");
+        AudioManager.instance.Play("credits");
         gameManager.PeirComplete();
     }
 }

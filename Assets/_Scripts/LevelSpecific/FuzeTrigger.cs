@@ -7,6 +7,8 @@ public class FuzeTrigger : MonoBehaviour
 	private CarShopManager carManager;
 	private ActivateWorkBench activateWorkBench;
 
+	public GameObject cookies;
+
 	private void Start()
 	{
 		carManager = GameObject.Find("CarShopManager").GetComponent<CarShopManager>();
@@ -17,6 +19,7 @@ public class FuzeTrigger : MonoBehaviour
 		if(other.CompareTag("Player"))
 		{
 			AudioManager.instance.Play("lights");
+			cookies.SetActive(false);
 			carManager.MainLightsON();
 			activateWorkBench.MakeAvalible();
 		}

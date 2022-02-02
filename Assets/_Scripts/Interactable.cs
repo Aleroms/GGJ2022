@@ -9,6 +9,7 @@ public class Interactable : MonoBehaviour
 
     public void DoInteraction() 
     {
+        Debug.Log("play audio here");
         onInteraction.Invoke();
     }
 }

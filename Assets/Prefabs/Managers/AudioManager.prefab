@@ -59,17 +59,41 @@ MonoBehaviour:
   - name: bar-loop
     clip: {fileID: 8300000, guid: a750f03eadbc38f46bc56addb7f35b2a, type: 3}
     source: {fileID: 0}
-    volume: 0.2
+    volume: 0.3
     pitch: 1
     loop: 1
   - name: bar-postdeath-loop
     clip: {fileID: 8300000, guid: befcb071d2dd48248842170077b92c4c, type: 3}
     source: {fileID: 0}
-    volume: 0.2
+    volume: 0.3
     pitch: 1
     loop: 1
   - name: radio-station-loop
     clip: {fileID: 8300000, guid: 141e34fbe858eb847a9c50e86f6daa86, type: 3}
+    source: {fileID: 0}
+    volume: 0.3
+    pitch: 1
+    loop: 1
+  - name: pier-loop
+    clip: {fileID: 8300000, guid: 49639cbf5a49a4247848f4434031572d, type: 3}
+    source: {fileID: 0}
+    volume: 0.8
+    pitch: 1
+    loop: 1
+  - name: carshop-intro
+    clip: {fileID: 8300000, guid: edf7d0acf441e3646b37966bcab286dc, type: 3}
+    source: {fileID: 0}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+  - name: carshop-loop
+    clip: {fileID: 8300000, guid: c857580b2fd032f4d9a3ae2a9a99541e, type: 3}
+    source: {fileID: 0}
+    volume: 0.3
+    pitch: 1
+    loop: 1
+  - name: case-closed
+    clip: {fileID: 8300000, guid: 485ae768f9e82d347bc584355a4231fd, type: 3}
     source: {fileID: 0}
     volume: 1
     pitch: 1
@@ -79,7 +103,7 @@ MonoBehaviour:
     source: {fileID: 0}
     volume: 1
     pitch: 1
-    loop: 1
+    loop: 0
   - name: clue
     clip: {fileID: 8300000, guid: b3b9dc65e857b5d4d9a822c72597f744, type: 3}
     source: {fileID: 0}
@@ -116,32 +140,8 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 0
-  - name: carshop-intro
-    clip: {fileID: 8300000, guid: edf7d0acf441e3646b37966bcab286dc, type: 3}
-    source: {fileID: 0}
-    volume: 1
-    pitch: 1
-    loop: 0
-  - name: carshop-loop
-    clip: {fileID: 8300000, guid: c857580b2fd032f4d9a3ae2a9a99541e, type: 3}
-    source: {fileID: 0}
-    volume: 1
-    pitch: 1
-    loop: 1
-  - name: case-closed
-    clip: {fileID: 8300000, guid: 485ae768f9e82d347bc584355a4231fd, type: 3}
-    source: {fileID: 0}
-    volume: 1
-    pitch: 1
-    loop: 1
   - name: jukebox
     clip: {fileID: 8300000, guid: 7611bc1ec556bb443a9c5f51620a26fc, type: 3}
-    source: {fileID: 0}
-    volume: 1
-    pitch: 1
-    loop: 0
-  - name: pier_loop
-    clip: {fileID: 8300000, guid: 49639cbf5a49a4247848f4434031572d, type: 3}
     source: {fileID: 0}
     volume: 1
     pitch: 1
@@ -199,7 +199,7 @@ MonoBehaviour:
     source: {fileID: 0}
     volume: 1
     pitch: 1
-    loop: 1
+    loop: 0
   - name: puzzle-complete
     clip: {fileID: 8300000, guid: 50df2bbedfd43374ba14d9eadefc2245, type: 3}
     source: {fileID: 0}

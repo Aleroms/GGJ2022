@@ -9,6 +9,8 @@ public class UIDialogueChoiceController : MonoBehaviour
 
     [SerializeField] private DialogueNode choiceNextNode;
 
+    public int id;
+
     public DialogueChoice Choice 
     {
         set 
@@ -28,6 +30,10 @@ public class UIDialogueChoiceController : MonoBehaviour
 
     private void OnClick() 
     {
+        if(id == 1 )
+		{
+            Debug.Log("id 1");
+		}
         dialogueChannel.RaiseRequestDialogueNode(choiceNextNode);
     }
 }

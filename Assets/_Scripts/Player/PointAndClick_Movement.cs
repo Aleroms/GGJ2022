@@ -57,8 +57,10 @@ public class PointAndClick_Movement : MonoBehaviour
 	private void PicturePuzzle(RaycastHit hit)
 	{
 		Inventory inv = GetComponent<Inventory>();
-		if(inv != null)
+		if(inv != null && dist < 2f)
 		{
+			AudioManager.instance.Play("pick-up");
+
 			inv.CollectPictureFragment();
 			Destroy(hit.transform.gameObject);
 		}
