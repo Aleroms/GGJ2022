@@ -8,10 +8,11 @@ public class IntroPainting : MonoBehaviour
 	public Image currentPainting;
 	public Text currText;
     public Sprite[] panels;
-	public string[] narration;
 
-	public float textTimer;
-	public float waitTillStartGame;
+	[TextArea(3,10)]
+	public string[] narration;
+	public float typeWriterSpeed;
+	public float panelFadeSpeed;
 
 	public int textIndex;
 	public int panelIndex;
@@ -21,8 +22,7 @@ public class IntroPainting : MonoBehaviour
 		panelIndex = 0;
 
 		currentPainting.sprite = panels[0];
-		currText.text = narration[0];
-		//StartCoroutine(PaintingCoroutine());
+		StartCoroutine(TypeWriterEffectCoroutine(narration[0]));
 	}
 	private void Update()
 	{
@@ -38,100 +38,107 @@ public class IntroPainting : MonoBehaviour
 				return;
 			}
 
-			currText.text = narration[textIndex];
+			StopAllCoroutines();
+			StartCoroutine(TypeWriterEffectCoroutine(narration[textIndex]));
 
 			if (textIndex == 5)
 			{
+				//first transition; Fade
 				panelIndex++;
-				currentPainting.sprite = panels[panelIndex];
+
+				StartCoroutine(FadeImage(true));
+				
 			}
 			else if (textIndex == 7)
 			{
+				//second transition; Hard Jump
 				panelIndex++;
 				currentPainting.sprite = panels[panelIndex];
 			}
 			else if (textIndex == 12)
 			{
+				//third transition; Hard Jump
 				panelIndex++;
 				currentPainting.sprite = panels[panelIndex];
 			}
 			else if (textIndex == 20)
 			{
+				//4th transition
 				panelIndex++;
 				currentPainting.sprite = panels[panelIndex];
+
+				panelFadeSpeed = 3f;
+				StartCoroutine(FadeImage(true));
 			}
 			
 		}
 	}
-	/*else if(textIndex > 20)
-			{
-				AudioManager.instance.Stop("menu-loop");
-				AudioManager.instance.Play("bar-loop");
-				GameManager.Instance.LoadLevel(1);
-			}*/
-
-	private IEnumerator PaintingCoroutine()
+	private IEnumerator TypeWriterEffectCoroutine(string s)
 	{
-		/*		Painting 1		*/
-		currentPainting.sprite = panels[0];
-		currText.text = narration[0];
-		yield return new WaitForSeconds(textTimer);
-		currText.text = narration[1];
-		yield return new WaitForSeconds(textTimer);
-		currText.text = narration[2];
-		yield return new WaitForSeconds(textTimer);
-		currText.text = narration[3];
-		yield return new WaitForSeconds(textTimer);
-		currText.text = narration[4];
-		yield return new WaitForSeconds(textTimer);
+		currText.text = "";
 
-		/*		Painting 2		*/
-		currentPainting.sprite = panels[1];
-		currText.text = narration[5];
-		yield return new WaitForSeconds(textTimer);
-		currText.text = narration[6];
-
-		/*		Painting 3		*/
-		currentPainting.sprite = panels[2];
-		currText.text = narration[7];
-		yield return new WaitForSeconds(textTimer);
-		currText.text = narration[8];
-		yield return new WaitForSeconds(textTimer);
-		currText.text = narration[9];
-		yield return new WaitForSeconds(textTimer);
-		currText.text = narration[10];
-		yield return new WaitForSeconds(textTimer);
-		currText.text = narration[11];
-		yield return new WaitForSeconds(textTimer);
-
-		/*		Painting 4		*/
-		currentPainting.sprite = panels[3];
-		currText.text = narration[12];
-		yield return new WaitForSeconds(textTimer);
-		currText.text = narration[13];
-		yield return new WaitForSeconds(textTimer);
-		currText.text = narration[14];
-		yield return new WaitForSeconds(textTimer);
-		currText.text = narration[15];
-		yield return new WaitForSeconds(textTimer);
-		currText.text = narration[16];
-		yield return new WaitForSeconds(textTimer);
-		currText.text = narration[17];
-		yield return new WaitForSeconds(textTimer);
-		currText.text = narration[18];
-		yield return new WaitForSeconds(textTimer);
-		currText.text = narration[19];
-		yield return new WaitForSeconds(textTimer);
-
-		/*		Painting 5		*/
-		currentPainting.sprite = panels[4];
-		currText.text = narration[20];
-		yield return new WaitForSeconds(waitTillStartGame);
-		AudioManager.instance.Stop("menu-loop");
-		AudioManager.instance.Play("bar-loop");
-		GameManager.Instance.LoadLevel(1);
-
+		foreach(char c in s.ToCharArray())
+		{
+			currText.text += c;
+			yield return new WaitForSeconds(typeWriterSpeed);
+		}
 	}
+	private IEnumerator PanelFadeEffectCoroutine()
+	{
+		panelIndex++;
+		//currentPainting.sprite = panels[panelIndex];
+
+		float targetAlpha = 40f;
+
+		for(int a = 255; a > targetAlpha; a--)
+		{
+			currentPainting.color = new Color(currentPainting.color.r, currentPainting.color.g, currentPainting.color.b, a);
+			yield return null;
+		}
+	}
+	private IEnumerator FadeImage(bool fadeAway)
+	{
+		// fade from opaque to transparent
+		if (fadeAway)
+		{
+			// loop over 1 second backwards
+			for (float i = panelFadeSpeed; i >= 0; i -= Time.deltaTime)
+			{
+				// set color with i as alpha
+				currentPainting.color = new Color(1, 1, 1, i);
+				yield return null;
+			}
+
+			if(textIndex == 5)
+			{
+				currentPainting.sprite = panels[panelIndex];
+
+				// loop over 1 second
+				for (float i = 0; i <= panelFadeSpeed; i += Time.deltaTime)
+				{
+					// set color with i as alpha
+					currentPainting.color = new Color(1, 1, 1, i);
+					yield return null;
+				}
+			}
+
+			
+		}
+		// fade from transparent to opaque
+		else
+		{
+			// loop over 1 second
+			for (float i = 0; i <= panelFadeSpeed; i += Time.deltaTime)
+			{
+				// set color with i as alpha
+				currentPainting.color = new Color(1, 1, 1, i);
+				yield return null;
+			}
+		}
+	}
+
+
+
 
 
 
