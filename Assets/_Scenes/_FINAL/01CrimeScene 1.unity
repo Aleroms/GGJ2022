@@ -20233,7 +20233,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7495280741302333630, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495280741302333630, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7495280741302333630, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -20243,6 +20247,26 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 777331006}
+    - target: {fileID: 7495280741302333630, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495280741302333630, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495280741302333630, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495280741302333630, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: map-close
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495280741302333630, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7495280741302333631, guid: d795d155dfecda84aad5639d6f9a7328, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -168

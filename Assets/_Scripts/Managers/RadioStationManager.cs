@@ -24,7 +24,7 @@ public class RadioStationManager : MonoBehaviour
 	public void ExitRadioStation()
 	{
 		GameObject.FindWithTag("Player").GetComponent<PointAndClick_Movement>().enabled = false;
-
+		AudioManager.instance.Play("map-open");
 		mapLoader.SetActive(true);
 	}
 

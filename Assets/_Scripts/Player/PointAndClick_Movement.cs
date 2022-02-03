@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.AI;
 using UnityEngine;
+using System;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class PointAndClick_Movement : MonoBehaviour
@@ -38,7 +39,7 @@ public class PointAndClick_Movement : MonoBehaviour
 
 			if(Physics.Raycast(ray,out hit,Mathf.Infinity,playerLayerMask))
 			{
-				Debug.Log(hit.transform.gameObject.name);
+				//Debug.Log(hit.transform.gameObject.name);
 
 				if (!hit.collider.CompareTag("Picture"))
 				{
@@ -73,5 +74,10 @@ public class PointAndClick_Movement : MonoBehaviour
     public void SwitchCamera(Camera c2)
 	{
         cam = c2;
+	}
+
+	public void Credits(Transform target)
+	{
+		agent.SetDestination(target.position);
 	}
 }

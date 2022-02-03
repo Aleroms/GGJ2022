@@ -45,10 +45,13 @@ public class MapLevelLoader : MonoBehaviour
             case 3:
                 AudioManager.instance.Stop("radio-station-loop");
                 AudioManager.instance.Play("carshop-loop");
+                AudioManager.instance.Play("map-close");
                 break;
             case 4:
                 AudioManager.instance.Stop("carshop-loop");
                 AudioManager.instance.Play("pier-loop");
+                AudioManager.instance.Play("map-close");
+
                 break;
 		}
 

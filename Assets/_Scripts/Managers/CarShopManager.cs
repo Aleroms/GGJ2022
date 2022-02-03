@@ -12,13 +12,7 @@ public class CarShopManager : MonoBehaviour
 		MainLights.SetActive(false);
 		mapLoader.SetActive(false);
 	}
-	private void Update()
-	{
-		if(Input.GetKeyDown(KeyCode.O))
-		{
-			ExitCarShop();
-		}
-	}
+	
 	public void MainLightsON()
 	{
 		MainLights.SetActive(true);
@@ -30,6 +24,7 @@ public class CarShopManager : MonoBehaviour
 		GameObject.FindWithTag("Player").GetComponent<PointAndClick_Movement>().enabled = false;
 		GameManager.Instance.CarShopComplete();
 
+		AudioManager.instance.Play("map-open");
 		mapLoader.SetActive(true);
 	}
 }

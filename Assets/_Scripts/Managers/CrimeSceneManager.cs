@@ -69,7 +69,7 @@ public class CrimeSceneManager : MonoBehaviour
 	{
 		GameObject.FindWithTag("Player").GetComponent<PointAndClick_Movement>().enabled = false;
 
-		
+		AudioManager.instance.Play("map-open");
 		mapLoader.SetActive(true);
 		
 	}

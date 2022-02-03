@@ -18,8 +18,8 @@ EditorBuildSettings:
     path: Assets/_Scenes/_FINAL/03CarShop 1.unity
     guid: 2437514085c0dbd409f65347f1efdf38
   - enabled: 1
-    path: Assets/_Scenes/_FINAL/04Pier 1.unity
-    guid: 9c74b847cfc976b4fb7a1c19c6290965
+    path: Assets/_Scenes/Gameplay/04Pier.unity
+    guid: ede7a874b717ac04eb259248c313847d
   - enabled: 1
     path: Assets/_Scenes/Menu&Credits/Credits.unity
     guid: 2e8d2d1a7d8dfa44eb5f73a9e7a8e81e

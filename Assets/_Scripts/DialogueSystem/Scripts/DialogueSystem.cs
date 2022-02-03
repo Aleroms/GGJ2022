@@ -10,8 +10,11 @@ namespace DialogueSystem
 {
     public class DialogueSystem : MonoBehaviour
     {
+        public static DialogueSystem Instance;
+        
         public TextMeshProUGUI nameText;
         public TextMeshProUGUI dialogueText;
+        public Image img;
 
         public Animator animator;
         public Animator btnAnimator;
@@ -19,12 +22,12 @@ namespace DialogueSystem
 
         private Queue<string> sentences;
         private Queue<Dialogue> dialogueQueue;
-        public static DialogueSystem Instance;
 
         private bool playerHasChose = false;
         private bool spare = false;
         public GameObject buttons;
         public GameObject CurtinScreen;
+        public Transform target;
 
 		private void Awake()
 		{
@@ -59,6 +62,7 @@ namespace DialogueSystem
             
 
             Dialogue temp = dialogueQueue.Dequeue();
+            img.sprite = temp.picture;
 
             foreach (string s in temp.sentences)
             {
@@ -70,6 +74,8 @@ namespace DialogueSystem
 
 		public void PlayerSpare(Dialogue[] spareDialogue)
 		{
+            StartCoroutine(SpareCoroutine());
+
             spare = true;
             dialogueQueue.Clear();
             
@@ -78,8 +84,18 @@ namespace DialogueSystem
 
             StartDialogue(spareDialogue);
 		}
+        private IEnumerator SpareCoroutine()
+		{
+            GameObject.FindWithTag("Player").GetComponent<PointAndClick_Movement>().enabled = true;
+            GameObject.FindWithTag("Player").GetComponent<PointAndClick_Movement>().Credits(target);
+            yield return new WaitForSeconds(0.3f);
+            GameObject.FindWithTag("Player").GetComponent<PointAndClick_Movement>().enabled = false;
+        }
         public void PlayerShoot(Dialogue shootDialogue)
 		{
+            if(!playerHasChose)
+                AudioManager.instance.Play("shoot");
+
             spare = false;
             sentences.Clear();
 
@@ -91,7 +107,7 @@ namespace DialogueSystem
 
             playerHasChose = true;
             nameText.text = shootDialogue.name;
-
+            img.sprite = shootDialogue.picture;
          
 
             foreach(string s in shootDialogue.sentences)
@@ -124,7 +140,8 @@ namespace DialogueSystem
                     Dialogue temp = dialogueQueue.Dequeue();
 
                     nameText.text = temp.name;
-                    Debug.Log("DisplayNextSentence->" + nameText.text);
+                    img.sprite = temp.picture;
+                    
 
                     foreach (string str in temp.sentences)
                     {
@@ -146,7 +163,8 @@ namespace DialogueSystem
                         Dialogue temp = dialogueQueue.Dequeue();
 
                         nameText.text = temp.name;
-                        //Debug.Log("DisplayNextSentence->" + nameText.text);
+                        img.sprite = temp.picture;
+                        
 
                         foreach (string str in temp.sentences)
                         {

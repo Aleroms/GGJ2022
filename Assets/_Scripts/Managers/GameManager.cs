@@ -66,6 +66,7 @@ public class GameManager : MonoBehaviour
 	public void CarShopComplete()
 	{
 		Debug.Log("Car Shop Complete...");
+		AudioManager.instance.Play("map-open");
 		gatingMechanism++;
 	}
 	public void PeirComplete()
@@ -76,8 +77,8 @@ public class GameManager : MonoBehaviour
 		Debug.Log("Pier Complete...");
 		gatingMechanism++;
 
-		
-		LoadLevel(gatingMechanism);
+
+		SceneManager.LoadScene("Credits");
 	}
 	public void Quit()
 	{

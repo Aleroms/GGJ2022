@@ -265,11 +265,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 975558529}
   dialogueText: {fileID: 222303047}
+  img: {fileID: 1979522015}
   animator: {fileID: 972551051}
   btnAnimator: {fileID: 1324917147}
   shootAnimator: {fileID: 1738867581}
   buttons: {fileID: 1324917145}
   CurtinScreen: {fileID: 1738867577}
+  target: {fileID: 1813032550}
 --- !u!4 &165541713
 Transform:
   m_ObjectHideFlags: 0
@@ -2894,33 +2896,141 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 972551047}
   dialogue:
-  - name: sammy
+  - picture: {fileID: 21300000, guid: 93f6c872fcc06bf479ea710344fa62ee, type: 3}
+    name: Joe
     sentences:
-    - ayo what it do baby
-    - lemme get that instagram handle
-    - oh okay, i understand... I'm lactose intolerant too.
-  - name: OJ
+    - Stop right there!
+  - picture: {fileID: 21300000, guid: 0e1e7ce0cfc7de44da1374ec42ff6c8d, type: 3}
+    name: George
     sentences:
-    - nikes on my feet
-    - i'm not lactose intolerant bitch
-  - name: sammy2
+    - Damn it!
+  - picture: {fileID: 21300000, guid: 93f6c872fcc06bf479ea710344fa62ee, type: 3}
+    name: Joe
     sentences:
-    - fuck yo nikes
-    - im outta here
+    - "Sorry kid, but I can\u2019t let you leave yet. I have evidence to suggest
+      that you murdered one of my friends just now."
+  - picture: {fileID: 21300000, guid: 0e1e7ce0cfc7de44da1374ec42ff6c8d, type: 3}
+    name: George
+    sentences:
+    - Friend? You mean that wackjob Donald? I know nothing about it!
+  - picture: {fileID: 21300000, guid: 93f6c872fcc06bf479ea710344fa62ee, type: 3}
+    name: Joe
+    sentences:
+    - "Clearly you do. Donald\u2019s body hasn\u2019t been reported to the cops yet,
+      and I haven\u2019t found any indication that they\u2019ve found the body by
+      themselves."
+    - "I didn\u2019t even need to tell you who my friend was to know who I was talking
+      about. Now I know I\u2019m talking to the killer."
+  - picture: {fileID: 21300000, guid: 0e1e7ce0cfc7de44da1374ec42ff6c8d, type: 3}
+    name: George
+    sentences:
+    - 'Fine! You won. I did it! I killed him. I had to, after what he did to my dad!
+
+'
+    - "We didn\u2019t do anything to him. We never even knew him! And yet he smashes
+      his head in with a baseball bat!"
+    - "All to throw off the cops, so they can\u2019t make a solid connection between
+      those he killed!"
+  - picture: {fileID: 21300000, guid: 93f6c872fcc06bf479ea710344fa62ee, type: 3}
+    name: Joe
+    sentences:
+    - "Wait a minute kid\u2026 are you saying Donald\u2019s the Manhattan Menace?"
+  - picture: {fileID: 21300000, guid: 0e1e7ce0cfc7de44da1374ec42ff6c8d, type: 3}
+    name: George
+    sentences:
+    - Yes, I am. I hid in the closet the day he broke into my house. I know he did
+      it, I saw his face with my own two eyes.
+    - "None of the cops would believe me though. Couldn\u2019t find any case against
+      him, they said. And I won\u2019t lie, he has been quite good at hiding evidence.\r\n"
+    - So I had to take matters into my own hands. Give him a taste of his own medicine.
+    - 'He was supposed to be the last victim of the Manhattan Menace, but then you
+      found me.
+
+'
+  - picture: {fileID: 21300000, guid: 93f6c872fcc06bf479ea710344fa62ee, type: 3}
+    name: Joe
+    sentences:
+    - "\u2026this is all making sense now. This repentance thing, do you know about
+      it too?"
+  - picture: {fileID: 21300000, guid: 0e1e7ce0cfc7de44da1374ec42ff6c8d, type: 3}
+    name: George
+    sentences:
+    - Yeah, I do. I found something he wrote before I killed him.
+    - "You guys were part of a squad from WWII, right?\r"
+  - picture: {fileID: 21300000, guid: 93f6c872fcc06bf479ea710344fa62ee, type: 3}
+    name: Joe
+    sentences:
+    - Yeah, we were. What about them?
+  - picture: {fileID: 21300000, guid: 0e1e7ce0cfc7de44da1374ec42ff6c8d, type: 3}
+    name: George
+    sentences:
+    - Supposedly, from what he wrote, he was killing people to repent for what you
+      guys did in the war.
+    - "Said something about how you guys weren\u2019t better than the enemy, and
+      that everyone who died, died for nothing."
+    - So, in order to repent, he resorted to killing you guys off. Last one to die
+      would be him.
+  - picture: {fileID: 21300000, guid: 93f6c872fcc06bf479ea710344fa62ee, type: 3}
+    name: Joe
+    sentences:
+    - "That means I was next on his list. Damn\u2026 guess I\u2019d have a favor
+      to pay, if you hadn\u2019t committed murder just now."
+    - "I\u2019m surprised you told me so easily though.\r"
+  - picture: {fileID: 21300000, guid: 0e1e7ce0cfc7de44da1374ec42ff6c8d, type: 3}
+    name: George
+    sentences:
+    - "It doesn\u2019t matter what I do, because you already caught me."
+    - Do whatever you want. My life is over.
   shootDialogue:
+    picture: {fileID: 21300000, guid: 93f6c872fcc06bf479ea710344fa62ee, type: 3}
     name: Narrator
     sentences:
-    - he went down fast...
-    - he went down fast...2
-    - he went down fast...3
-    - he went down fast...34
+    - "that decision was one of the worst ones I\u2019ve made in my life."
+    - Kid went down with one shot. The police never found who killed him. His death
+      was overshadowed by the discovery of the Manhattan Menace.
+    - "I wanted him to pay for Donald\u2019s death with his blood. Didn\u2019t matter
+      if he got a fair trial or not. I think a part of me didn\u2019t want him to
+      get one."
+    - "I couldn\u2019t work as a private eye anymore. Not after that."
+    - "I should\u2019ve known better than to try and make light by creating more
+      darkness"
   spareDialogue:
-  - name: spare1
+  - picture: {fileID: 21300000, guid: 0e1e7ce0cfc7de44da1374ec42ff6c8d, type: 3}
+    name: George
     sentences:
-    - i spared you
-  - name: spare2
+    - "\u2026where are you going?"
+  - picture: {fileID: 21300000, guid: 93f6c872fcc06bf479ea710344fa62ee, type: 3}
+    name: Joe
     sentences:
-    - k
+    - "Don\u2019t know. Away from this pier at least."
+  - picture: {fileID: 21300000, guid: 0e1e7ce0cfc7de44da1374ec42ff6c8d, type: 3}
+    name: George
+    sentences:
+    - "Aren\u2019t you going to, you know, take me in? Kill me?"
+  - picture: {fileID: 21300000, guid: 93f6c872fcc06bf479ea710344fa62ee, type: 3}
+    name: Joe
+    sentences:
+    - "Listen kid, there\u2019s enough dead people in the world, and you won\u2019t
+      survive a day in prison."
+    - Donald wanted his repentance, but he did it through killing. All he did was
+      make this city darker.
+    - "I want you to make yours by living. Doesn\u2019t matter if it's for your father
+      or for yourself."
+    - "Don\u2019t let yourself be caught up in the darkness of this city anymore,
+      you got me?"
+  - picture: {fileID: 21300000, guid: 93f6c872fcc06bf479ea710344fa62ee, type: 3}
+    name: Narrator
+    sentences:
+    - "And that was that. Of course, I had to report Donald\u2019s body to the police,
+      and they eventually found out the real truth about him."
+    - They never did catch George though.
+    - "I don\u2019t know exactly what happened to him, but I want to think that he\u2019s
+      doing just fine."
+    - "He doesn\u2019t seem like the kind of kid to take second chances lightly."
+    - "As for me\u2026 I think that entire case made me take my job as a private
+      eye more seriously than ever."
+    - "After all\u2026 the only way to creep in light in this dark world is to create
+      it."
 --- !u!65 &1605636501
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3077,7 +3187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 0.92156863}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.92156863}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3186,6 +3296,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8112c9efc1b07546abe7dba37edebe5, type: 3}
+--- !u!1 &1813032549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1813032550}
+  m_Layer: 0
+  m_Name: target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1813032550
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813032549}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.73, y: -1.777931, z: -3.87}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1862449464 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8714b03d55192394faf7f8d254d7765c, type: 3}
@@ -3733,6 +3873,26 @@ PrefabInstance:
     - target: {fileID: 7036960295585497042, guid: df128abac08bcf04a9ff3f68f62d2eb3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036960295585497043, guid: df128abac08bcf04a9ff3f68f62d2eb3, type: 3}
+      propertyPath: sounds.Array.size
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036960295585497043, guid: df128abac08bcf04a9ff3f68f62d2eb3, type: 3}
+      propertyPath: sounds.Array.data[27].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: a1a5da29fefa1bf468b89160b83e54a2, type: 3}
+    - target: {fileID: 7036960295585497043, guid: df128abac08bcf04a9ff3f68f62d2eb3, type: 3}
+      propertyPath: sounds.Array.data[27].name
+      value: shoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036960295585497043, guid: df128abac08bcf04a9ff3f68f62d2eb3, type: 3}
+      propertyPath: sounds.Array.data[27].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036960295585497043, guid: df128abac08bcf04a9ff3f68f62d2eb3, type: 3}
+      propertyPath: sounds.Array.data[27].volume
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df128abac08bcf04a9ff3f68f62d2eb3, type: 3}
