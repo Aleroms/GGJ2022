@@ -65,6 +65,10 @@ public class PointAndClick_Movement : MonoBehaviour
 			Destroy(hit.transform.gameObject);
 		}
 	}
+	public void stopMovement()
+	{
+		anim.SetBool("isWalking", false);
+	}
 
     public void SwitchCamera(Camera c2)
 	{

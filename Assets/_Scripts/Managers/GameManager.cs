@@ -70,7 +70,8 @@ public class GameManager : MonoBehaviour
 	}
 	public void PeirComplete()
 	{
-		AudioManager.instance.Play("caseClosed");
+		AudioManager.instance.Stop("pier-loop");
+		AudioManager.instance.Play("credits");
 
 		Debug.Log("Pier Complete...");
 		gatingMechanism++;
